@@ -1,0 +1,19 @@
+region_name: bihar
+
+bounding_box:
+  min_lat:
+  max_lat:
+  min_lon:
+  max_lon:
+
+stations:
+  - station_id:
+    name:
+    river:
+    warning_level_m:
+    danger_level_m:
+    highest_flood_level_m:
+
+data_sources:
+  rainfall:
+  river_level:
