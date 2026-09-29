@@ -1,19 +1,62 @@
 region_name: bihar
 
 bounding_box:
-  min_lat:
-  max_lat:
-  min_lon:
-  max_lon:
+  min_lat: 26.2
+  max_lat: 27.3
+  min_lon: 83.9
+  max_lon: 85.2
 
 stations:
-  - station_id:
-    name:
-    river:
-    warning_level_m:
-    danger_level_m:
-    highest_flood_level_m:
+  - station_id: bagaha_gandak
+    name: Bagaha
+    river: Gandak
+    district: Pashchim Champaran
+    latitude: 27.12944444
+    longitude: 84.04833333
+    warning_level_m: 88.30
+    danger_level_m: 89.30
+    highest_flood_level_m: 90.30
+
+  - station_id: chanpatia_burhigandak
+    name: Chanpatia
+    river: Burhi Gandak
+    district: Pashchim Champaran
+    latitude: 26.96027778
+    longitude: 84.53555556
+    warning_level_m: 72.68
+    danger_level_m: 73.68
+    highest_flood_level_m: 76.68
+
+  - station_id: ahirwalia_burhigandak
+    name: Ahirwalia
+    river: Burhi Gandak
+    district: Purba Champaran
+    latitude: 26.41527778
+    longitude: 85.06611111
+    warning_level_m: 58.62
+    danger_level_m: 59.62
+    highest_flood_level_m: 61.17
+
+  - station_id: dumariaghat_gandak
+    name: Dumariaghat
+    river: Gandak
+    district: Gopalganj
+    latitude: 26.35888889
+    longitude: 84.74805556
+    warning_level_m: 61.22
+    danger_level_m: 62.22
+    highest_flood_level_m: 64.36
+
+  - station_id: chatia_gandak
+    name: Chatia
+    river: Gandak
+    district: Purba Champaran
+    latitude: 26.53277778
+    longitude: 84.55861111
+    warning_level_m: null   # not officially published for this station
+    danger_level_m: 69.15
+    highest_flood_level_m: 70.04
 
 data_sources:
-  rainfall:
-  river_level:
+  rainfall: chirps  # chc.ucsb.edu/data/chirps — fallback if IMD/India-WRIS unavailable
+  river_level: cwc_flood_forecast  # ffs.india-water.gov.in
