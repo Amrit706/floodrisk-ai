@@ -1,0 +1,239 @@
+date,target_date,station_id,station_name,river,district,river_station_id,river_level_time,water_level_m,water_level_change_24h_m,warning_level_m,danger_level_m,hfl_m,risk_label,target_water_level_m,risk_label_24h
+2026-06-02,2026-06-03,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.0,-0.010000000000005116,,69.15,70.04,Normal,65.0,Normal
+2026-06-03,2026-06-04,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.0,0.0,,69.15,70.04,Normal,64.99,Normal
+2026-06-04,2026-06-05,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.99,-0.010000000000005116,,69.15,70.04,Normal,64.99,Normal
+2026-06-05,2026-06-06,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.99,0.0,,69.15,70.04,Normal,64.98,Normal
+2026-06-06,2026-06-07,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.98,-0.009999999999990905,,69.15,70.04,Normal,64.98,Normal
+2026-06-07,2026-06-08,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.98,0.0,,69.15,70.04,Normal,64.97,Normal
+2026-06-08,2026-06-09,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,-0.010000000000005116,,69.15,70.04,Normal,64.97,Normal
+2026-06-09,2026-06-10,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.0,,69.15,70.04,Normal,64.97,Normal
+2026-06-10,2026-06-11,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.0,,69.15,70.04,Normal,64.96,Normal
+2026-06-11,2026-06-12,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.96,-0.010000000000005116,,69.15,70.04,Normal,64.96,Normal
+2026-06-12,2026-06-13,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.96,0.0,,69.15,70.04,Normal,64.97,Normal
+2026-06-13,2026-06-14,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.010000000000005116,,69.15,70.04,Normal,64.97,Normal
+2026-06-14,2026-06-15,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.0,,69.15,70.04,Normal,64.97,Normal
+2026-06-15,2026-06-16,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.0,,69.15,70.04,Normal,64.97,Normal
+2026-06-16,2026-06-17,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.97,0.0,,69.15,70.04,Normal,64.96,Normal
+2026-06-17,2026-06-18,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.96,-0.010000000000005116,,69.15,70.04,Normal,64.96,Normal
+2026-06-18,2026-06-19,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.96,0.0,,69.15,70.04,Normal,64.96,Normal
+2026-06-19,2026-06-20,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.96,0.0,,69.15,70.04,Normal,64.95,Normal
+2026-06-20,2026-06-21,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.95,-0.009999999999990905,,69.15,70.04,Normal,64.95,Normal
+2026-06-21,2026-06-22,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.95,0.0,,69.15,70.04,Normal,64.94,Normal
+2026-06-22,2026-06-23,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.94,-0.010000000000005116,,69.15,70.04,Normal,64.98,Normal
+2026-06-23,2026-06-24,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.98,0.04000000000000625,,69.15,70.04,Normal,64.98,Normal
+2026-06-24,2026-06-25,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,64.98,0.0,,69.15,70.04,Normal,65.08,Normal
+2026-06-25,2026-06-26,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.08,0.09999999999999432,,69.15,70.04,Normal,65.21,Normal
+2026-06-26,2026-06-27,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.21,0.12999999999999545,,69.15,70.04,Normal,65.1,Normal
+2026-06-27,2026-06-28,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.1,-0.10999999999999943,,69.15,70.04,Normal,65.06,Normal
+2026-06-28,2026-06-29,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.06,-0.03999999999999204,,69.15,70.04,Normal,65.01,Normal
+2026-06-29,2026-06-30,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.01,-0.04999999999999716,,69.15,70.04,Normal,65.09,Normal
+2026-06-30,2026-07-01,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.09,0.0799999999999983,,69.15,70.04,Normal,65.54,Normal
+2026-07-01,2026-07-02,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.54,0.45000000000000284,,69.15,70.04,Normal,65.56,Normal
+2026-07-02,2026-07-03,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.56,0.01999999999999602,,69.15,70.04,Normal,65.45,Normal
+2026-07-03,2026-07-04,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.45,-0.10999999999999943,,69.15,70.04,Normal,65.63,Normal
+2026-07-04,2026-07-05,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.63,0.1799999999999926,,69.15,70.04,Normal,65.64,Normal
+2026-07-05,2026-07-06,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.64,0.010000000000005116,,69.15,70.04,Normal,65.7,Normal
+2026-07-06,2026-07-07,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.7,0.060000000000002274,,69.15,70.04,Normal,65.94,Normal
+2026-07-07,2026-07-08,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.94,0.23999999999999488,,69.15,70.04,Normal,66.02,Normal
+2026-07-08,2026-07-09,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.02,0.0799999999999983,,69.15,70.04,Normal,65.78,Normal
+2026-07-09,2026-07-10,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.78,-0.23999999999999488,,69.15,70.04,Normal,65.84,Normal
+2026-07-10,2026-07-11,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,65.84,0.060000000000002274,,69.15,70.04,Normal,66.2,Normal
+2026-07-11,2026-07-12,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.2,0.35999999999999943,,69.15,70.04,Normal,66.06,Normal
+2026-07-12,2026-07-13,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.06,-0.14000000000000057,,69.15,70.04,Normal,66.0,Normal
+2026-07-13,2026-07-14,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.0,-0.060000000000002274,,69.15,70.04,Normal,66.14,Normal
+2026-07-14,2026-07-15,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.14,0.14000000000000057,,69.15,70.04,Normal,66.56,Normal
+2026-07-15,2026-07-16,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.56,0.4200000000000017,,69.15,70.04,Normal,66.99,Normal
+2026-07-16,2026-07-17,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.99,0.4299999999999926,,69.15,70.04,Normal,66.93,Normal
+2026-07-17,2026-07-18,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.93,-0.05999999999998806,,69.15,70.04,Normal,66.86,Normal
+2026-07-18,2026-07-19,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.86,-0.07000000000000739,,69.15,70.04,Normal,66.82,Normal
+2026-07-19,2026-07-20,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.82,-0.04000000000000625,,69.15,70.04,Normal,66.95,Normal
+2026-07-20,2026-07-21,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.95,0.13000000000000966,,69.15,70.04,Normal,66.84,Normal
+2026-07-21,2026-07-22,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.84,-0.10999999999999943,,69.15,70.04,Normal,66.76,Normal
+2026-07-22,2026-07-23,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.76,-0.0799999999999983,,69.15,70.04,Normal,66.74,Normal
+2026-07-23,2026-07-24,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.74,-0.020000000000010232,,69.15,70.04,Normal,66.68,Normal
+2026-07-24,2026-07-25,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.68,-0.05999999999998806,,69.15,70.04,Normal,66.6,Normal
+2026-07-25,2026-07-26,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.6,-0.0800000000000125,,69.15,70.04,Normal,66.51,Normal
+2026-07-26,2026-07-27,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.51,-0.0899999999999892,,69.15,70.04,Normal,66.44,Normal
+2026-07-27,2026-07-28,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.44,-0.07000000000000739,,69.15,70.04,Normal,66.32,Normal
+2026-07-28,2026-07-29,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.32,-0.12000000000000455,,69.15,70.04,Normal,66.3,Normal
+2026-07-29,2026-07-30,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.3,-0.01999999999999602,,69.15,70.04,Normal,66.22,Normal
+2026-07-30,2026-07-31,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.22,-0.0799999999999983,,69.15,70.04,Normal,66.14,Normal
+2026-07-31,2026-08-01,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.14,-0.0799999999999983,,69.15,70.04,Normal,66.14,Normal
+2026-08-01,2026-08-02,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.14,0.0,,69.15,70.04,Normal,66.12,Normal
+2026-08-02,2026-08-03,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.12,-0.01999999999999602,,69.15,70.04,Normal,66.11,Normal
+2026-08-03,2026-08-04,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.11,-0.010000000000005116,,69.15,70.04,Normal,66.39,Normal
+2026-08-04,2026-08-05,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.39,0.28000000000000114,,69.15,70.04,Normal,66.65,Normal
+2026-08-05,2026-08-06,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.65,0.2600000000000051,,69.15,70.04,Normal,66.81,Normal
+2026-08-06,2026-08-07,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.81,0.1599999999999966,,69.15,70.04,Normal,67.01,Normal
+2026-08-07,2026-08-08,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.01,0.20000000000000284,,69.15,70.04,Normal,67.42,Normal
+2026-08-08,2026-08-09,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.42,0.4099999999999966,,69.15,70.04,Normal,67.62,Normal
+2026-08-09,2026-08-10,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.62,0.20000000000000284,,69.15,70.04,Normal,67.48,Normal
+2026-08-10,2026-08-11,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.48,-0.14000000000000057,,69.15,70.04,Normal,67.36,Normal
+2026-08-11,2026-08-12,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.36,-0.12000000000000455,,69.15,70.04,Normal,67.21,Normal
+2026-08-12,2026-08-13,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.21,-0.15000000000000568,,69.15,70.04,Normal,67.02,Normal
+2026-08-13,2026-08-14,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.02,-0.18999999999999773,,69.15,70.04,Normal,66.93,Normal
+2026-08-14,2026-08-15,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.93,-0.0899999999999892,,69.15,70.04,Normal,66.79,Normal
+2026-08-15,2026-08-16,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.79,-0.14000000000000057,,69.15,70.04,Normal,66.93,Normal
+2026-08-16,2026-08-17,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.93,0.14000000000000057,,69.15,70.04,Normal,66.98,Normal
+2026-08-17,2026-08-18,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.98,0.04999999999999716,,69.15,70.04,Normal,67.06,Normal
+2026-08-18,2026-08-19,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.06,0.0799999999999983,,69.15,70.04,Normal,67.06,Normal
+2026-08-19,2026-08-20,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.06,0.0,,69.15,70.04,Normal,66.98,Normal
+2026-08-20,2026-08-21,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.98,-0.0799999999999983,,69.15,70.04,Normal,66.88,Normal
+2026-08-21,2026-08-22,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.88,-0.10000000000000853,,69.15,70.04,Normal,66.74,Normal
+2026-08-22,2026-08-23,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.74,-0.14000000000000057,,69.15,70.04,Normal,66.73,Normal
+2026-08-23,2026-08-24,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.73,-0.009999999999990905,,69.15,70.04,Normal,66.79,Normal
+2026-08-24,2026-08-25,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.79,0.060000000000002274,,69.15,70.04,Normal,66.82,Normal
+2026-08-25,2026-08-26,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.82,0.029999999999986926,,69.15,70.04,Normal,66.75,Normal
+2026-08-26,2026-08-27,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.75,-0.06999999999999318,,69.15,70.04,Normal,66.7,Normal
+2026-08-27,2026-08-28,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.7,-0.04999999999999716,,69.15,70.04,Normal,66.71,Normal
+2026-08-28,2026-08-29,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.71,0.009999999999990905,,69.15,70.04,Normal,66.65,Normal
+2026-08-29,2026-08-30,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.65,-0.05999999999998806,,69.15,70.04,Normal,66.69,Normal
+2026-08-30,2026-08-31,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.69,0.03999999999999204,,69.15,70.04,Normal,66.75,Normal
+2026-08-31,2026-09-01,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.75,0.060000000000002274,,69.15,70.04,Normal,66.87,Normal
+2026-09-01,2026-09-02,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.87,0.12000000000000455,,69.15,70.04,Normal,66.91,Normal
+2026-09-02,2026-09-03,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.91,0.03999999999999204,,69.15,70.04,Normal,66.99,Normal
+2026-09-03,2026-09-04,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.99,0.0799999999999983,,69.15,70.04,Normal,67.11,Normal
+2026-09-04,2026-09-05,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.11,0.12000000000000455,,69.15,70.04,Normal,67.11,Normal
+2026-09-05,2026-09-06,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.11,0.0,,69.15,70.04,Normal,67.07,Normal
+2026-09-06,2026-09-07,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.07,-0.04000000000000625,,69.15,70.04,Normal,67.03,Normal
+2026-09-07,2026-09-08,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.03,-0.03999999999999204,,69.15,70.04,Normal,67.03,Normal
+2026-09-08,2026-09-09,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.03,0.0,,69.15,70.04,Normal,67.11,Normal
+2026-09-09,2026-09-10,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.11,0.0799999999999983,,69.15,70.04,Normal,66.97,Normal
+2026-09-10,2026-09-11,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.97,-0.14000000000000057,,69.15,70.04,Normal,66.85,Normal
+2026-09-11,2026-09-12,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.85,-0.12000000000000455,,69.15,70.04,Normal,66.78,Normal
+2026-09-12,2026-09-13,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.78,-0.06999999999999318,,69.15,70.04,Normal,66.7,Normal
+2026-09-13,2026-09-14,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.7,-0.0799999999999983,,69.15,70.04,Normal,66.62,Normal
+2026-09-14,2026-09-15,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.62,-0.0799999999999983,,69.15,70.04,Normal,66.73,Normal
+2026-09-15,2026-09-16,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.73,0.10999999999999943,,69.15,70.04,Normal,66.8,Normal
+2026-09-16,2026-09-17,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.8,0.06999999999999318,,69.15,70.04,Normal,66.76,Normal
+2026-09-17,2026-09-18,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.76,-0.03999999999999204,,69.15,70.04,Normal,66.79,Normal
+2026-09-18,2026-09-19,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.79,0.030000000000001137,,69.15,70.04,Normal,66.71,Normal
+2026-09-19,2026-09-20,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.71,-0.0800000000000125,,69.15,70.04,Normal,66.55,Normal
+2026-09-20,2026-09-21,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.55,-0.1599999999999966,,69.15,70.04,Normal,66.41,Normal
+2026-09-21,2026-09-22,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.41,-0.14000000000000057,,69.15,70.04,Normal,66.25,Normal
+2026-09-22,2026-09-23,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.25,-0.1599999999999966,,69.15,70.04,Normal,66.15,Normal
+2026-09-23,2026-09-24,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.15,-0.09999999999999432,,69.15,70.04,Normal,66.05,Normal
+2026-09-24,2026-09-25,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.05,-0.10000000000000853,,69.15,70.04,Normal,66.19,Normal
+2026-09-25,2026-09-26,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.19,0.14000000000000057,,69.15,70.04,Normal,66.75,Normal
+2026-09-26,2026-09-27,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,66.75,0.5600000000000023,,69.15,70.04,Normal,67.6,Normal
+2026-09-27,2026-09-28,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,67.6,0.8499999999999943,,69.15,70.04,Normal,68.2,Normal
+2026-09-28,2026-09-29,chatia_gandak,Chatia,Gandak,Purba Champaran,A-B,14:00,68.2,0.6000000000000085,,69.15,70.04,Normal,69.72,Severe
+2026-06-02,2026-06-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.75,-0.10000000000000142,61.22,62.22,64.36,Normal,60.68,Normal
+2026-06-03,2026-06-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.68,-0.07000000000000028,61.22,62.22,64.36,Normal,60.54,Normal
+2026-06-04,2026-06-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.54,-0.14000000000000057,61.22,62.22,64.36,Normal,60.45,Normal
+2026-06-05,2026-06-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.45,-0.0899999999999963,61.22,62.22,64.36,Normal,60.36,Normal
+2026-06-06,2026-06-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.36,-0.09000000000000341,61.22,62.22,64.36,Normal,60.27,Normal
+2026-06-07,2026-06-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.27,-0.0899999999999963,61.22,62.22,64.36,Normal,60.27,Normal
+2026-06-08,2026-06-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.27,0.0,61.22,62.22,64.36,Normal,60.42,Normal
+2026-06-09,2026-06-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.42,0.14999999999999858,61.22,62.22,64.36,Normal,60.52,Normal
+2026-06-10,2026-06-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.52,0.10000000000000142,61.22,62.22,64.36,Normal,60.52,Normal
+2026-06-11,2026-06-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.52,0.0,61.22,62.22,64.36,Normal,60.53,Normal
+2026-06-12,2026-06-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.53,0.00999999999999801,61.22,62.22,64.36,Normal,60.66,Normal
+2026-06-13,2026-06-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.66,0.12999999999999545,61.22,62.22,64.36,Normal,60.61,Normal
+2026-06-14,2026-06-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.61,-0.04999999999999716,61.22,62.22,64.36,Normal,60.45,Normal
+2026-06-15,2026-06-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.45,-0.1599999999999966,61.22,62.22,64.36,Normal,60.4,Normal
+2026-06-16,2026-06-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.4,-0.05000000000000426,61.22,62.22,64.36,Normal,60.31,Normal
+2026-06-17,2026-06-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.31,-0.0899999999999963,61.22,62.22,64.36,Normal,60.28,Normal
+2026-06-18,2026-06-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.28,-0.030000000000001137,61.22,62.22,64.36,Normal,60.25,Normal
+2026-06-19,2026-06-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.25,-0.030000000000001137,61.22,62.22,64.36,Normal,60.27,Normal
+2026-06-20,2026-06-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.27,0.020000000000003126,61.22,62.22,64.36,Normal,60.25,Normal
+2026-06-21,2026-06-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.25,-0.020000000000003126,61.22,62.22,64.36,Normal,60.62,Normal
+2026-06-22,2026-06-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,60.62,0.36999999999999744,61.22,62.22,64.36,Normal,61.1,Normal
+2026-06-23,2026-06-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.1,0.480000000000004,61.22,62.22,64.36,Normal,61.3,Above Normal
+2026-06-24,2026-06-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.3,0.19999999999999574,61.22,62.22,64.36,Above Normal,61.41,Above Normal
+2026-06-25,2026-06-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.41,0.10999999999999943,61.22,62.22,64.36,Above Normal,61.25,Above Normal
+2026-06-26,2026-06-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.25,-0.1599999999999966,61.22,62.22,64.36,Above Normal,61.05,Normal
+2026-06-27,2026-06-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.05,-0.20000000000000284,61.22,62.22,64.36,Normal,61.01,Normal
+2026-06-28,2026-06-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.01,-0.03999999999999915,61.22,62.22,64.36,Normal,61.12,Normal
+2026-06-29,2026-06-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.12,0.10999999999999943,61.22,62.22,64.36,Normal,61.7,Above Normal
+2026-06-30,2026-07-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.7,0.5800000000000054,61.22,62.22,64.36,Above Normal,61.77,Above Normal
+2026-07-01,2026-07-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.77,0.07000000000000028,61.22,62.22,64.36,Above Normal,61.56,Above Normal
+2026-07-02,2026-07-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.56,-0.21000000000000085,61.22,62.22,64.36,Above Normal,61.51,Above Normal
+2026-07-03,2026-07-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.51,-0.05000000000000426,61.22,62.22,64.36,Above Normal,61.63,Above Normal
+2026-07-04,2026-07-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.63,0.12000000000000455,61.22,62.22,64.36,Above Normal,61.84,Above Normal
+2026-07-05,2026-07-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.84,0.21000000000000085,61.22,62.22,64.36,Above Normal,61.82,Above Normal
+2026-07-06,2026-07-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.82,-0.020000000000003126,61.22,62.22,64.36,Above Normal,62.28,Severe
+2026-07-07,2026-07-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.28,0.46000000000000085,61.22,62.22,64.36,Severe,62.02,Above Normal
+2026-07-08,2026-07-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.02,-0.259999999999998,61.22,62.22,64.36,Above Normal,61.84,Above Normal
+2026-07-09,2026-07-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.84,-0.17999999999999972,61.22,62.22,64.36,Above Normal,62.38,Severe
+2026-07-10,2026-07-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.38,0.5399999999999991,61.22,62.22,64.36,Severe,62.24,Severe
+2026-07-11,2026-07-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.24,-0.14000000000000057,61.22,62.22,64.36,Severe,62.15,Above Normal
+2026-07-12,2026-07-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.15,-0.09000000000000341,61.22,62.22,64.36,Above Normal,62.09,Above Normal
+2026-07-13,2026-07-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.09,-0.05999999999999517,61.22,62.22,64.36,Above Normal,62.32,Severe
+2026-07-14,2026-07-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.32,0.22999999999999687,61.22,62.22,64.36,Severe,62.82,Severe
+2026-07-15,2026-07-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.82,0.5,61.22,62.22,64.36,Severe,62.9,Severe
+2026-07-16,2026-07-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.9,0.0799999999999983,61.22,62.22,64.36,Severe,62.76,Severe
+2026-07-17,2026-07-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.76,-0.14000000000000057,61.22,62.22,64.36,Severe,62.64,Severe
+2026-07-18,2026-07-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.64,-0.11999999999999744,61.22,62.22,64.36,Severe,62.68,Severe
+2026-07-19,2026-07-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.68,0.03999999999999915,61.22,62.22,64.36,Severe,62.76,Severe
+2026-07-20,2026-07-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.76,0.0799999999999983,61.22,62.22,64.36,Severe,62.64,Severe
+2026-07-21,2026-07-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.64,-0.11999999999999744,61.22,62.22,64.36,Severe,62.64,Severe
+2026-07-22,2026-07-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.64,0.0,61.22,62.22,64.36,Severe,62.54,Severe
+2026-07-23,2026-07-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.54,-0.10000000000000142,61.22,62.22,64.36,Severe,62.44,Severe
+2026-07-24,2026-07-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.44,-0.10000000000000142,61.22,62.22,64.36,Severe,62.37,Severe
+2026-07-25,2026-07-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.37,-0.07000000000000028,61.22,62.22,64.36,Severe,62.27,Severe
+2026-07-26,2026-07-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.27,-0.09999999999999432,61.22,62.22,64.36,Severe,62.08,Above Normal
+2026-07-27,2026-07-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.08,-0.19000000000000483,61.22,62.22,64.36,Above Normal,61.95,Above Normal
+2026-07-28,2026-07-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.95,-0.12999999999999545,61.22,62.22,64.36,Above Normal,62.17,Above Normal
+2026-07-29,2026-07-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.17,0.21999999999999886,61.22,62.22,64.36,Above Normal,62.0,Above Normal
+2026-07-30,2026-07-31,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.0,-0.1700000000000017,61.22,62.22,64.36,Above Normal,62.07,Above Normal
+2026-07-31,2026-08-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.07,0.07000000000000028,61.22,62.22,64.36,Above Normal,61.98,Above Normal
+2026-08-01,2026-08-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.98,-0.09000000000000341,61.22,62.22,64.36,Above Normal,62.1,Above Normal
+2026-08-02,2026-08-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.1,0.12000000000000455,61.22,62.22,64.36,Above Normal,62.35,Severe
+2026-08-03,2026-08-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.35,0.25,61.22,62.22,64.36,Severe,62.57,Severe
+2026-08-04,2026-08-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.57,0.21999999999999886,61.22,62.22,64.36,Severe,62.74,Severe
+2026-08-05,2026-08-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.74,0.1700000000000017,61.22,62.22,64.36,Severe,62.8,Severe
+2026-08-06,2026-08-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.8,0.05999999999999517,61.22,62.22,64.36,Severe,62.94,Severe
+2026-08-07,2026-08-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.94,0.14000000000000057,61.22,62.22,64.36,Severe,63.16,Severe
+2026-08-08,2026-08-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,63.16,0.21999999999999886,61.22,62.22,64.36,Severe,63.09,Severe
+2026-08-09,2026-08-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,63.09,-0.06999999999999318,61.22,62.22,64.36,Severe,62.9,Severe
+2026-08-10,2026-08-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.9,-0.19000000000000483,61.22,62.22,64.36,Severe,62.77,Severe
+2026-08-11,2026-08-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.77,-0.12999999999999545,61.22,62.22,64.36,Severe,62.71,Severe
+2026-08-12,2026-08-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.71,-0.060000000000002274,61.22,62.22,64.36,Severe,62.57,Severe
+2026-08-13,2026-08-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.57,-0.14000000000000057,61.22,62.22,64.36,Severe,62.49,Severe
+2026-08-14,2026-08-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.49,-0.0799999999999983,61.22,62.22,64.36,Severe,62.81,Severe
+2026-08-15,2026-08-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.81,0.3200000000000003,61.22,62.22,64.36,Severe,63.03,Severe
+2026-08-16,2026-08-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,63.03,0.21999999999999886,61.22,62.22,64.36,Severe,62.99,Severe
+2026-08-17,2026-08-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.99,-0.03999999999999915,61.22,62.22,64.36,Severe,62.97,Severe
+2026-08-18,2026-08-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.97,-0.020000000000003126,61.22,62.22,64.36,Severe,62.93,Severe
+2026-08-19,2026-08-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.93,-0.03999999999999915,61.22,62.22,64.36,Severe,62.8,Severe
+2026-08-20,2026-08-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.8,-0.13000000000000256,61.22,62.22,64.36,Severe,62.75,Severe
+2026-08-21,2026-08-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.75,-0.04999999999999716,61.22,62.22,64.36,Severe,62.64,Severe
+2026-08-22,2026-08-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.64,-0.10999999999999943,61.22,62.22,64.36,Severe,62.79,Severe
+2026-08-23,2026-08-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.79,0.14999999999999858,61.22,62.22,64.36,Severe,62.83,Severe
+2026-08-24,2026-08-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.83,0.03999999999999915,61.22,62.22,64.36,Severe,62.71,Severe
+2026-08-25,2026-08-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.71,-0.11999999999999744,61.22,62.22,64.36,Severe,62.57,Severe
+2026-08-26,2026-08-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.57,-0.14000000000000057,61.22,62.22,64.36,Severe,62.61,Severe
+2026-08-27,2026-08-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.61,0.03999999999999915,61.22,62.22,64.36,Severe,62.66,Severe
+2026-08-28,2026-08-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.66,0.04999999999999716,61.22,62.22,64.36,Severe,62.55,Severe
+2026-08-29,2026-08-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.55,-0.10999999999999943,61.22,62.22,64.36,Severe,62.52,Severe
+2026-08-30,2026-08-31,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.52,-0.02999999999999403,61.22,62.22,64.36,Severe,62.6,Severe
+2026-08-31,2026-09-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.6,0.0799999999999983,61.22,62.22,64.36,Severe,62.78,Severe
+2026-09-01,2026-09-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.78,0.17999999999999972,61.22,62.22,64.36,Severe,62.92,Severe
+2026-09-02,2026-09-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.92,0.14000000000000057,61.22,62.22,64.36,Severe,62.92,Severe
+2026-09-03,2026-09-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.92,0.0,61.22,62.22,64.36,Severe,62.97,Severe
+2026-09-04,2026-09-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.97,0.04999999999999716,61.22,62.22,64.36,Severe,62.88,Severe
+2026-09-05,2026-09-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.88,-0.0899999999999963,61.22,62.22,64.36,Severe,62.82,Severe
+2026-09-06,2026-09-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.82,-0.060000000000002274,61.22,62.22,64.36,Severe,62.81,Severe
+2026-09-07,2026-09-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.81,-0.00999999999999801,61.22,62.22,64.36,Severe,62.73,Severe
+2026-09-08,2026-09-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.73,-0.0800000000000054,61.22,62.22,64.36,Severe,62.55,Severe
+2026-09-09,2026-09-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.55,-0.17999999999999972,61.22,62.22,64.36,Severe,62.38,Severe
+2026-09-10,2026-09-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.38,-0.1699999999999946,61.22,62.22,64.36,Severe,62.32,Severe
+2026-09-11,2026-09-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.32,-0.060000000000002274,61.22,62.22,64.36,Severe,62.2,Above Normal
+2026-09-12,2026-09-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.2,-0.11999999999999744,61.22,62.22,64.36,Above Normal,62.19,Above Normal
+2026-09-13,2026-09-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.19,-0.010000000000005116,61.22,62.22,64.36,Above Normal,62.19,Above Normal
+2026-09-14,2026-09-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.19,0.0,61.22,62.22,64.36,Above Normal,62.42,Severe
+2026-09-15,2026-09-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.42,0.23000000000000398,61.22,62.22,64.36,Severe,62.48,Severe
+2026-09-16,2026-09-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.48,0.05999999999999517,61.22,62.22,64.36,Severe,62.45,Severe
+2026-09-17,2026-09-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.45,-0.02999999999999403,61.22,62.22,64.36,Severe,62.47,Severe
+2026-09-18,2026-09-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.47,0.01999999999999602,61.22,62.22,64.36,Severe,62.34,Severe
+2026-09-19,2026-09-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.34,-0.12999999999999545,61.22,62.22,64.36,Severe,62.23,Severe
+2026-09-20,2026-09-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.23,-0.11000000000000654,61.22,62.22,64.36,Severe,62.04,Above Normal
+2026-09-21,2026-09-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.04,-0.18999999999999773,61.22,62.22,64.36,Above Normal,61.9,Above Normal
+2026-09-22,2026-09-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.9,-0.14000000000000057,61.22,62.22,64.36,Above Normal,61.83,Above Normal
+2026-09-23,2026-09-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.83,-0.07000000000000028,61.22,62.22,64.36,Above Normal,61.9,Above Normal
+2026-09-24,2026-09-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,61.9,0.07000000000000028,61.22,62.22,64.36,Above Normal,62.14,Above Normal
+2026-09-25,2026-09-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.14,0.240000000000002,61.22,62.22,64.36,Above Normal,62.75,Severe
+2026-09-26,2026-09-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,62.75,0.6099999999999994,61.22,62.22,64.36,Severe,63.22,Severe
+2026-09-27,2026-09-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,63.22,0.46999999999999886,61.22,62.22,64.36,Severe,63.68,Severe
+2026-09-28,2026-09-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,A-C,14:00,63.68,0.46000000000000085,61.22,62.22,64.36,Severe,64.26,Severe
