@@ -1,0 +1,6 @@
+config_station_id,config_station_name,river_station_id,river_station_name,match_status
+bagaha_gandak,Bagaha,,,no river-level station match
+chanpatia_burhigandak,Chanpatia,,,no river-level station match
+ahirwalia_burhigandak,Ahirwalia,,,no river-level station match
+dumariaghat_gandak,Dumariaghat,A-C,Dumaria Ghat,matched
+chatia_gandak,Chatia,A-B,Chatia,matched

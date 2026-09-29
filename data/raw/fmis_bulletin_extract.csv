@@ -1,0 +1,52 @@
+﻿record_type,report_date,report_time,basin,district,gauge_site,observation_time,high_flood_level_raw,high_flood_level_m,danger_level_m,water_level_m,trend,status,rain_gauge_site,rainfall_raw,rainfall_mm,rainfall_source,source_pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,Garuda,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,Janakpur,0.00,0.00,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,Kathmandu,0.00,0.00,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,Khokana,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,SindhuliGadi,0.20,0.20,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Bagmati / Adhwara,,,,,,,,,,Sundarijal,0.20,0.20,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Muzaffarpur,Benibad,06:00,50.12/25,50.12,48.68,49.92,S,Above DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Sitamarhi,Dhengbridge,06:00,73.47/24,73.47,71.00,70.75,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Sheohar,Dubbadhar,14:00,63.75,63.75,61.28,60.89,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Darbhanga,Ekmighat,06:00,49.52/04,49.52,46.94,44.89,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Darbhanga,Hayaghat,06:00,48.96/87,48.96,45.72,43.99,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Darbhanga,Kamtaul,06:00,53.05/95,53.05,50.00,48.17,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Sitamarhi,Kansar,14:00,60.86,60.86,59.06,58.65,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Bagmati / Adhwara,Sitamarhi,Sonakhan,14:00,72.05/19,72.05,68.80,68.54,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Burhi Gandak,,,,,,,,,,Simara,0.00,0.00,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Burhi Gandak,,,,,,,,,,Thori,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,Muzaffarpur,Ahirwalia,06:00,61.17/75,61.17,59.62,56.12,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,Khagaria,Khagaria,06:00,39.22/76,39.22,36.58,36.07,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,East Champaran,Lalbegiaghat,06:00,67.09/75,67.09,63.20,61.27,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,Samastipur,Rosera,06:00,46.56/20,46.56,42.63,38.75,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,Samastipur,Samastipur,06:00,49.38/87,49.38,46.02,41.44,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Burhi Gandak,Muzaffarpur,Sikandarpur,06:00,54.29/87,54.29,52.53,48.90,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Arughat,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Betrawati,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Danda,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Devghat,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Ghalekharkha,0.20,0.20,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Makwanpur Gadhi,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Gandak,,,,,,,,,,Pokhara,0.00,0.00,mfd.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Gandak,East Champaran,Chatia,06:00,70.04/02,70.04,69.15,68.80,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Gandak,Gopalganj,Dumariaghat,06:00,64.36/20,64.36,62.22,63.98,R,Above DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Gandak,Vaishali,Hajipur,06:00,50.93/48,50.93,50.32,49.09,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Gandak,Muzaffarpur,Rewaghat,06:00,55.46/20,55.46,54.41,54.41,R,DL,,,,,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kamla,,,,,,,,,,Chisapani Bazar,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kamla,,,,,,,,,,Siraha,0.00,0.00,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kamla,,,,,,,,,,Titriya,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kamla,Madhubani,Jainagar,14:00,71.35/19,71.35,67.75,67.35,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kamla,Madhubani,Jhanjharpur,06:00,53.11/19,53.11,50.50,50.00,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kamla,Madhubani,Jhanjharpur (Rail pul),14:00,54.50/19,54.50,50.00,49.86,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Dhankuta,0.30,0.30,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Dharan,15.90,15.90,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Jiri,0.20,0.20,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Mulghat,NA,,hydrology.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Okhaldunga,0.20,0.20,mfd.gov.np,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Kosi,,,,,,,,,,Taplejung,TRACES,,mfd.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kosi,Khagaria,Baltara,06:00,36.40/87,36.40,33.85,35.22,S,Above DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kosi,Supaul,Basua,06:00,49.24/17,49.24,47.75,46.97,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Kosi,Katihar,Kursela,06:00,32.10/82,32.10,30.00,29.80,R,Below DL,,,,,Flood_Bulletin_20260929.pdf
+rainfall,2026-09-29,6:00 PM,Mahananda,,,,,,,,,,Biratnagar,0.00,0.00,mfd.gov.np,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Mahananda,Purnia,Dhengraghat,06:00,38.20/17,38.20,35.65,34.56,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
+station_status,2026-09-29,6:00 PM,Mahananda,Katihar,Jhawa,06:00,34.07/17,34.07,31.40,29.87,F,Below DL,,,,,Flood_Bulletin_20260929.pdf
