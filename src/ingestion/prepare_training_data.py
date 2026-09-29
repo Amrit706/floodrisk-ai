@@ -13,10 +13,15 @@ import yaml
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_FILE = PROJECT_ROOT / "configs" / "bihar.yaml"
 RIVER_FILE = PROJECT_ROOT / "data" / "raw" / "river_level.csv"
-RAINFALL_FILE = PROJECT_ROOT / "data" / "raw" / "chirps" / "rainfall_2026.csv"
+RAINFALL_FILES = (
+    PROJECT_ROOT / "data" / "raw" / "chirps" / "rainfall_2026.csv",
+    PROJECT_ROOT / "data" / "raw" / "chirps" / "rainfall.csv",
+)
 OUTPUT_DIR = PROJECT_ROOT / "data" / "processed"
 MAPPING_FILE = OUTPUT_DIR / "station_crosswalk.csv"
 OUTPUT_FILE = OUTPUT_DIR / "flood_training_24h.csv"
+RIVER_LABEL_FILE = OUTPUT_DIR / "river_level_labeled_24h.csv"
+COVERAGE_FILE = OUTPUT_DIR / "data_coverage.csv"
 
 
 def normalize_station(value: object) -> str:
@@ -93,15 +98,6 @@ def main() -> None:
     pd.DataFrame(mappings).to_csv(MAPPING_FILE, index=False)
     if not river_key_to_config:
         raise ValueError("No configured stations match river_level.csv station names.")
-    if not RAINFALL_FILE.exists():
-        raise FileNotFoundError(
-            f"Station crosswalk saved to {MAPPING_FILE}; run download_chirps_overlap.py "
-            f"to create {RAINFALL_FILE}."
-        )
-
-    rainfall = pd.read_csv(RAINFALL_FILE)
-    rainfall["date"] = pd.to_datetime(rainfall["date"], errors="raise").dt.normalize()
-    rainfall["rainfall_mm"] = pd.to_numeric(rainfall["rainfall_mm"], errors="coerce")
     levels = levels[levels["station_key"].isin(river_key_to_config)].copy()
     levels["station_id"] = levels["station_key"].map(river_key_to_config)
     levels["time_sort"] = levels["time"].astype(str).str.replace(":", "", regex=False)
@@ -110,19 +106,86 @@ def main() -> None:
     daily_levels = levels.drop_duplicates(["station_id", "date"], keep="last").copy()
     daily_levels["river_level_time"] = daily_levels["time"]
 
+    metadata = pd.DataFrame(stations).set_index("station_id")
+    for column in ("name", "river", "district", "latitude", "longitude", "warning_level_m", "danger_level_m", "highest_flood_level_m"):
+        daily_levels[column] = daily_levels["station_id"].map(metadata[column])
+    daily_levels = daily_levels.rename(columns={"name": "station_name", "highest_flood_level_m": "hfl_m"})
+    daily_levels["risk_label"] = daily_levels.apply(
+        lambda row: risk_label(row["water_level_m"], row["warning_level_m"], row["danger_level_m"], row["hfl_m"]),
+        axis=1,
+    )
+
+    label_groups = []
+    for _, group in daily_levels.groupby("station_id", sort=False):
+        group = consecutive_next(group)
+        group["risk_label_24h"] = group.apply(
+            lambda row: risk_label(
+                row["target_water_level_m"], row["warning_level_m"], row["danger_level_m"], row["hfl_m"]
+            ) if pd.notna(row["target_water_level_m"]) else pd.NA,
+            axis=1,
+        )
+        label_groups.append(group)
+    river_labels = pd.concat(label_groups, ignore_index=True)
+    # Keep only rows that have both the previous-day level-change feature and
+    # an observed next-day target, so every row is usable for 24-hour labels.
+    river_labels = river_labels.dropna(subset=["water_level_change_24h_m", "risk_label_24h"]).copy()
+    river_labels["date"] = river_labels["date"].dt.strftime("%Y-%m-%d")
+    river_labels["target_date"] = pd.to_datetime(river_labels["target_date"]).dt.strftime("%Y-%m-%d")
+    river_label_columns = [
+        "date", "target_date", "station_id", "station_name", "river", "district", "river_station_id",
+        "river_level_time", "water_level_m", "water_level_change_24h_m", "warning_level_m",
+        "danger_level_m", "hfl_m", "risk_label", "target_water_level_m", "risk_label_24h",
+    ]
+    river_labels["river_station_id"] = river_labels["station_key"].map(
+        {key: rows[0]["station_id"] for key, rows in available_by_name.items() if key in river_key_to_config}
+    )
+    river_labels[river_label_columns].to_csv(RIVER_LABEL_FILE, index=False)
+
+    rainfall_path = next((path for path in RAINFALL_FILES if path.exists()), None)
+    rainfall = None
+    if rainfall_path is not None:
+        rainfall = pd.read_csv(rainfall_path)
+        rainfall["date"] = pd.to_datetime(rainfall["date"], errors="raise").dt.normalize()
+        rainfall["rainfall_mm"] = pd.to_numeric(rainfall["rainfall_mm"], errors="coerce")
+        if "chirps_stage" not in rainfall:
+            rainfall["chirps_stage"] = "not recorded"
+        if "chirps_flavor" not in rainfall:
+            rainfall["chirps_flavor"] = "not recorded"
+
+    coverage_rows = []
+    river_min, river_max = daily_levels["date"].min(), daily_levels["date"].max()
+    for station_id, station in config_for_id.items():
+        station_rain = rainfall[rainfall["station_id"] == station_id] if rainfall is not None else pd.DataFrame()
+        overlap = station_rain[station_rain["date"].between(river_min, river_max)] if not station_rain.empty else station_rain
+        coverage_rows.append({
+            "station_id": station_id,
+            "station_name": station["name"],
+            "river_start": river_min.date().isoformat(),
+            "river_end": river_max.date().isoformat(),
+            "rainfall_file": rainfall_path.name if rainfall_path else "missing",
+            "rainfall_start": station_rain["date"].min().date().isoformat() if not station_rain.empty else "",
+            "rainfall_end": station_rain["date"].max().date().isoformat() if not station_rain.empty else "",
+            "overlap_days": overlap["date"].nunique() if not overlap.empty else 0,
+            "status": "matched dates" if not overlap.empty else "no rainfall/river date overlap",
+        })
+    pd.DataFrame(coverage_rows).to_csv(COVERAGE_FILE, index=False)
+    if rainfall is None:
+        print(f"River labels: {RIVER_LABEL_FILE}")
+        print(f"Coverage: {COVERAGE_FILE}; no rainfall file was found, so merged training rows were not created.")
+        return
+    if not any(row["overlap_days"] for row in coverage_rows):
+        print(f"River labels: {RIVER_LABEL_FILE}")
+        print(f"Coverage: {COVERAGE_FILE}; {rainfall_path.name} does not overlap river dates {river_min.date()} to {river_max.date()}.")
+        print("Merged training data was not created; obtain rainfall for the river observation period first.")
+        return
+
     rainfall = rainfall[rainfall["station_id"].isin(config_for_id)].copy()
     rainfall = rainfall[["date", "station_id", "rainfall_mm", "chirps_stage", "chirps_flavor"]]
     daily = daily_levels.merge(rainfall, on=["date", "station_id"], how="inner", validate="one_to_one")
 
-    metadata = pd.DataFrame(stations).set_index("station_id")
     for column in ("name", "river", "district", "latitude", "longitude", "warning_level_m", "danger_level_m", "highest_flood_level_m"):
         daily[column] = daily["station_id"].map(metadata[column])
-    daily = daily.rename(columns={
-        "name": "station_name",
-        "highest_flood_level_m": "hfl_m",
-        "danger_level_m": "danger_level_m",
-        "warning_level_m": "warning_level_m",
-    })
+    daily = daily.rename(columns={"name": "station_name", "highest_flood_level_m": "hfl_m"})
     daily["risk_label"] = daily.apply(
         lambda row: risk_label(
             row["water_level_m"],
