@@ -10,6 +10,8 @@
 [![Hackathon](https://img.shields.io/badge/Hackathon-HackNowa%202026-6c5ce7)](https://unstop.com/hackathons/hacknowa-global-hackathon-2026-innovation-hacks-1752198/amp)
 [![Status](https://img.shields.io/badge/Status-Research%20prototype-orange)](#-limitations-and-responsible-use)
 
+🚀 **Streamlit app:** [Open FloodRiskAI](https://floodrisk-ai.streamlit.app/) *(verify that the latest deployment rebuild is working before sharing).*
+
 ---
 
 ## 💡 The idea
@@ -34,7 +36,7 @@ The app lets a user select a supported station and historical observation, view 
 
 | Coverage item | Current pilot |
 |---|---|
-| Region | West Champaran, Bihar |
+| Region | Bihar Gandak pilot: Chatia (Purba Champaran) and Dumariaghat (Gopalganj) |
 | River | Gandak |
 | Matched stations | Dumariaghat and Chatia |
 | Prepared training data | 228 rows: 114 per station |
@@ -164,5 +166,6 @@ AI tools assisted with code editing and debugging. The project submitter should 
 ---
 
 <p align="center"><strong>🌧️ Clearer context from river and rainfall data—one careful prototype at a time.</strong></p>
+
 
 
