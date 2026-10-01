@@ -2,7 +2,16 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+!data/raw/river_level.csv
+!data/raw/chirps/
+data/raw/chirps/*
+!data/raw/chirps/rainfall_2026.csv
+!data/processed/station_crosswalk.csv
+!data/processed/data_coverage.csv
+!data/processed/river_level_labeled_24h.csv
+!data/processed/flood_training_24h.csv
 venv/
+.venv/
 __pycache__/
 *.pyc
 .env

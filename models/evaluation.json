@@ -1,0 +1,87 @@
+{
+  "model": "RandomForestClassifier",
+  "prediction_horizon_hours": 24,
+  "split_type": "chronological",
+  "train_rows": 182,
+  "test_rows": 46,
+  "train_start": "2026-06-03",
+  "train_end": "2026-09-01",
+  "test_start": "2026-09-02",
+  "test_end": "2026-09-24",
+  "target_classes_in_data": [
+    "Above Normal",
+    "Normal",
+    "Severe"
+  ],
+  "classes_absent_from_data": [
+    "Extreme"
+  ],
+  "macro_f1": 0.9010752688172042,
+  "labels": [
+    "Above Normal",
+    "Normal",
+    "Severe"
+  ],
+  "confusion_matrix": [
+    [
+      6,
+      0,
+      2
+    ],
+    [
+      0,
+      23,
+      0
+    ],
+    [
+      1,
+      0,
+      14
+    ]
+  ],
+  "classification_report": {
+    "Above Normal": {
+      "precision": 0.8571428571428571,
+      "recall": 0.75,
+      "f1-score": 0.8,
+      "support": 8.0
+    },
+    "Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "Severe": {
+      "precision": 0.875,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9032258064516129,
+      "support": 15.0
+    },
+    "accuracy": 0.9347826086956522,
+    "macro avg": {
+      "precision": 0.9107142857142857,
+      "recall": 0.8944444444444445,
+      "f1-score": 0.9010752688172042,
+      "support": 46.0
+    },
+    "weighted avg": {
+      "precision": 0.9343944099378882,
+      "recall": 0.9347826086956522,
+      "f1-score": 0.9336605890603085,
+      "support": 46.0
+    }
+  },
+  "feature_columns": [
+    "station_id",
+    "water_level_m",
+    "water_level_change_24h_m",
+    "rainfall_mm",
+    "rainfall_24h_mm",
+    "rainfall_48h_mm",
+    "rainfall_72h_mm",
+    "danger_level_m",
+    "hfl_m"
+  ],
+  "caveat": "Small, short-period pilot data from two matched stations; not an operational warning model."
+}

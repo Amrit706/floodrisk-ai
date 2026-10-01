@@ -1,0 +1,586 @@
+date,station_id,station_name,river,district,latitude,longitude,rainfall_mm,chirps_stage,chirps_flavor
+2026-06-01,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-02,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.4734213352203369,final,sat
+2026-06-03,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.076774463057518,final,sat
+2026-06-04,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-05,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,20.071197509765625,final,sat
+2026-06-06,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.5161099433898926,final,sat
+2026-06-07,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.2698231041431427,final,sat
+2026-06-08,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.532074928283691,final,sat
+2026-06-09,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-10,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,3.2566752433776855,final,sat
+2026-06-11,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,7.3461384773254395,final,sat
+2026-06-12,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-13,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-14,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-15,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.2494530826807022,final,sat
+2026-06-16,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-17,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,17.755788803100586,final,sat
+2026-06-18,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-19,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,20.85614585876465,final,sat
+2026-06-20,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0015339849051088095,final,sat
+2026-06-21,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,18.16031837463379,final,sat
+2026-06-22,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,9.266379356384277,final,sat
+2026-06-23,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.41996344923973083,final,sat
+2026-06-24,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-06-25,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,13.003528594970703,final,sat
+2026-06-26,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,7.525341033935547,final,sat
+2026-06-27,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,18.290407180786133,final,sat
+2026-06-28,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,27.965076446533203,final,sat
+2026-06-29,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,9.773524284362793,final,sat
+2026-06-30,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,2.3710484504699707,final,sat
+2026-07-01,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.0540958642959595,final,sat
+2026-07-02,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.14953899383544922,final,sat
+2026-07-03,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-07-04,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.2817598283290863,final,sat
+2026-07-05,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-07-06,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,8.26025676727295,final,sat
+2026-07-07,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,2.4241020679473877,final,sat
+2026-07-08,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,5.105953693389893,final,sat
+2026-07-09,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.77302885055542,final,sat
+2026-07-10,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,13.528037071228027,final,sat
+2026-07-11,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,17.99188232421875,final,sat
+2026-07-12,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,8.848404884338379,final,sat
+2026-07-13,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,39.77655792236328,final,sat
+2026-07-14,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,6.893592357635498,final,sat
+2026-07-15,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.0229021310806274,final,sat
+2026-07-16,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,8.730570793151855,final,sat
+2026-07-17,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.0499922037124634,final,sat
+2026-07-18,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.160749912261963,final,sat
+2026-07-19,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.248999834060669,final,sat
+2026-07-20,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.26372766494751,final,sat
+2026-07-21,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.2887636423110962,final,sat
+2026-07-22,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.3118804693222046,final,sat
+2026-07-23,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.6570181846618652,final,sat
+2026-07-24,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,5.640982151031494,final,sat
+2026-07-25,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-07-26,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,6.181828498840332,final,sat
+2026-07-27,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.5129694938659668,final,sat
+2026-07-28,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.1276600956916809,final,sat
+2026-07-29,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,11.692781448364258,final,sat
+2026-07-30,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,20.35408592224121,final,sat
+2026-07-31,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,41.711997985839844,final,sat
+2026-08-01,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,3.3977627754211426,final,sat
+2026-08-02,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,16.1616153717041,final,sat
+2026-08-03,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,45.82301712036133,final,sat
+2026-08-04,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,21.88405990600586,final,sat
+2026-08-05,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,8.119824409484863,final,sat
+2026-08-06,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,3.0473990440368652,final,sat
+2026-08-07,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.7988901138305664,final,sat
+2026-08-08,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-08-09,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.557405948638916,final,sat
+2026-08-10,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,9.322369575500488,final,sat
+2026-08-11,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,final,sat
+2026-08-12,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.9264734387397766,final,sat
+2026-08-13,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,10.063712120056152,final,sat
+2026-08-14,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.07571607083082199,final,sat
+2026-08-15,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.45811423659324646,final,sat
+2026-08-16,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,3.0430209636688232,final,sat
+2026-08-17,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,16.788724899291992,final,sat
+2026-08-18,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.0592056512832642,final,sat
+2026-08-19,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.13711512088775635,final,sat
+2026-08-20,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.483328640460968,final,sat
+2026-08-21,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.10841818153858185,final,sat
+2026-08-22,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,7.344938278198242,final,sat
+2026-08-23,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,6.319689750671387,final,sat
+2026-08-24,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,7.541759490966797,final,sat
+2026-08-25,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,2.3723702430725098,final,sat
+2026-08-26,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.13439229130744934,final,sat
+2026-08-27,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,11.412886619567871,final,sat
+2026-08-28,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,3.3722710609436035,final,sat
+2026-08-29,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,26.93267250061035,final,sat
+2026-08-30,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,6.79172420501709,final,sat
+2026-08-31,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.22963708639144897,final,sat
+2026-09-01,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.104589462280273,prelim,sat
+2026-09-02,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,7.008983612060547,prelim,sat
+2026-09-03,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.408221960067749,prelim,sat
+2026-09-04,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,5.241611003875732,prelim,sat
+2026-09-05,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,1.841472864151001,prelim,sat
+2026-09-06,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,32.494903564453125,prelim,sat
+2026-09-07,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,10.112159729003906,prelim,sat
+2026-09-08,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,18.40768814086914,prelim,sat
+2026-09-09,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,37.29867935180664,prelim,sat
+2026-09-10,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,22.239389419555664,prelim,sat
+2026-09-11,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.422183990478516,prelim,sat
+2026-09-12,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,2.8752241134643555,prelim,sat
+2026-09-13,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,prelim,sat
+2026-09-14,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,2.378190040588379,prelim,sat
+2026-09-15,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.2764456570148468,prelim,sat
+2026-09-16,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,12.017107009887695,prelim,sat
+2026-09-17,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.067807674407959,prelim,sat
+2026-09-18,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.4542131423950195,prelim,sat
+2026-09-19,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.248636245727539,prelim,sat
+2026-09-20,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,4.088014602661133,prelim,sat
+2026-09-21,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.0,prelim,sat
+2026-09-22,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,0.6788809299468994,prelim,sat
+2026-09-23,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,22.05405616760254,prelim,sat
+2026-09-24,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,56.17281723022461,prelim,sat
+2026-09-25,ahirwalia_burhigandak,Ahirwalia,Burhi Gandak,Purba Champaran,26.41527778,85.06611111,12.18568229675293,prelim,sat
+2026-06-01,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-02,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.5646499395370483,final,sat
+2026-06-03,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-04,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.25960373878479,final,sat
+2026-06-05,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,12.46573257446289,final,sat
+2026-06-06,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,21.116079330444336,final,sat
+2026-06-07,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.1061909943819046,final,sat
+2026-06-08,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.884890079498291,final,sat
+2026-06-09,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-10,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,6.111291885375977,final,sat
+2026-06-11,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,9.594586372375488,final,sat
+2026-06-12,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-13,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.24760222434997559,final,sat
+2026-06-14,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,16.465547561645508,final,sat
+2026-06-15,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-16,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.296764850616455,final,sat
+2026-06-17,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-18,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-19,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.049824237823486,final,sat
+2026-06-20,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.136253356933594,final,sat
+2026-06-21,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.9195722341537476,final,sat
+2026-06-22,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,9.528614044189453,final,sat
+2026-06-23,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-24,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-06-25,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,12.972888946533203,final,sat
+2026-06-26,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,2.446070909500122,final,sat
+2026-06-27,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,16.993755340576172,final,sat
+2026-06-28,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,6.189450740814209,final,sat
+2026-06-29,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,26.540363311767578,final,sat
+2026-06-30,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.009903120808303356,final,sat
+2026-07-01,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.2444275617599487,final,sat
+2026-07-02,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.4947642087936401,final,sat
+2026-07-03,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,5.514664173126221,final,sat
+2026-07-04,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,7.201716899871826,final,sat
+2026-07-05,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,8.957700729370117,final,sat
+2026-07-06,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.17065156996250153,final,sat
+2026-07-07,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.8399849534034729,final,sat
+2026-07-08,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,6.672475814819336,final,sat
+2026-07-09,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,20.64884376525879,final,sat
+2026-07-10,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,12.624423027038574,final,sat
+2026-07-11,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,10.919093132019043,final,sat
+2026-07-12,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,51.93694305419922,final,sat
+2026-07-13,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,47.05332565307617,final,sat
+2026-07-14,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,12.4083251953125,final,sat
+2026-07-15,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,5.369378089904785,final,sat
+2026-07-16,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,39.83958435058594,final,sat
+2026-07-17,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,35.20706558227539,final,sat
+2026-07-18,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,44.02445602416992,final,sat
+2026-07-19,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,37.45566177368164,final,sat
+2026-07-20,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,8.119903564453125,final,sat
+2026-07-21,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.663990020751953,final,sat
+2026-07-22,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,5.925387382507324,final,sat
+2026-07-23,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,9.444580078125,final,sat
+2026-07-24,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,6.783986568450928,final,sat
+2026-07-25,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-07-26,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,17.27427101135254,final,sat
+2026-07-27,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,10.9041748046875,final,sat
+2026-07-28,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.6009209156036377,final,sat
+2026-07-29,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.4553825855255127,final,sat
+2026-07-30,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.254195213317871,final,sat
+2026-07-31,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,9.0233736038208,final,sat
+2026-08-01,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,33.25192642211914,final,sat
+2026-08-02,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,6.504973411560059,final,sat
+2026-08-03,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,15.523344993591309,final,sat
+2026-08-04,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,3.423417329788208,final,sat
+2026-08-05,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,41.66843032836914,final,sat
+2026-08-06,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.8798972368240356,final,sat
+2026-08-07,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,10.93586540222168,final,sat
+2026-08-08,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.9379123449325562,final,sat
+2026-08-09,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.37709879875183105,final,sat
+2026-08-10,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.3246804475784302,final,sat
+2026-08-11,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-08-12,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.822475552558899,final,sat
+2026-08-13,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,19.380470275878906,final,sat
+2026-08-14,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,final,sat
+2026-08-15,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,11.24600601196289,final,sat
+2026-08-16,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,8.134438514709473,final,sat
+2026-08-17,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,2.243983030319214,final,sat
+2026-08-18,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.05724446102976799,final,sat
+2026-08-19,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,14.019166946411133,final,sat
+2026-08-20,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,2.6332452297210693,final,sat
+2026-08-21,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.7783533334732056,final,sat
+2026-08-22,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,19.403236389160156,final,sat
+2026-08-23,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,4.960932731628418,final,sat
+2026-08-24,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.22238664329051971,final,sat
+2026-08-25,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.5609830617904663,final,sat
+2026-08-26,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.9694922566413879,final,sat
+2026-08-27,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,17.530540466308594,final,sat
+2026-08-28,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,12.93541431427002,final,sat
+2026-08-29,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,16.043106079101562,final,sat
+2026-08-30,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.1554222106933594,final,sat
+2026-08-31,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,16.76026153564453,final,sat
+2026-09-01,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.40101608633995056,prelim,sat
+2026-09-02,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.2376391589641571,prelim,sat
+2026-09-03,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.11082210391759872,prelim,sat
+2026-09-04,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,2.8996546268463135,prelim,sat
+2026-09-05,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,9.012007713317871,prelim,sat
+2026-09-06,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,1.1219207048416138,prelim,sat
+2026-09-07,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,23.048460006713867,prelim,sat
+2026-09-08,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,3.4989898204803467,prelim,sat
+2026-09-09,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,30.565317153930664,prelim,sat
+2026-09-10,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,5.483386993408203,prelim,sat
+2026-09-11,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-12,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-13,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-14,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-15,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-16,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,41.3197021484375,prelim,sat
+2026-09-17,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,10.302597999572754,prelim,sat
+2026-09-18,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.7925077080726624,prelim,sat
+2026-09-19,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.27327847480773926,prelim,sat
+2026-09-20,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-21,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.0,prelim,sat
+2026-09-22,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,0.4029662013053894,prelim,sat
+2026-09-23,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,2.3518147468566895,prelim,sat
+2026-09-24,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,18.08870506286621,prelim,sat
+2026-09-25,bagaha_gandak,Bagaha,Gandak,Pashchim Champaran,27.12944444,84.04833333,14.926243782043457,prelim,sat
+2026-06-01,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.2047411948442459,final,sat
+2026-06-02,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-03,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-04,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.37605756521224976,final,sat
+2026-06-05,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,14.96291446685791,final,sat
+2026-06-06,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,12.212555885314941,final,sat
+2026-06-07,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.15421487390995026,final,sat
+2026-06-08,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.23226313292980194,final,sat
+2026-06-09,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.113795757293701,final,sat
+2026-06-10,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,3.2236902713775635,final,sat
+2026-06-11,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,13.195819854736328,final,sat
+2026-06-12,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-13,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-14,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-15,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.450247883796692,final,sat
+2026-06-16,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.5051885843276978,final,sat
+2026-06-17,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-18,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-19,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,19.97949981689453,final,sat
+2026-06-20,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,10.569723129272461,final,sat
+2026-06-21,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,6.169480800628662,final,sat
+2026-06-22,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,7.57996940612793,final,sat
+2026-06-23,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-24,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-06-25,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,17.429548263549805,final,sat
+2026-06-26,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.38464879989624023,final,sat
+2026-06-27,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,3.7645263671875,final,sat
+2026-06-28,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.2488174438476562,final,sat
+2026-06-29,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,30.627750396728516,final,sat
+2026-06-30,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.2995973825454712,final,sat
+2026-07-01,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.97871732711792,final,sat
+2026-07-02,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.750717639923096,final,sat
+2026-07-03,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.8325152397155762,final,sat
+2026-07-04,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.243774652481079,final,sat
+2026-07-05,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.13552029430866241,final,sat
+2026-07-06,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.5146602392196655,final,sat
+2026-07-07,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.6864570379257202,final,sat
+2026-07-08,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.292495250701904,final,sat
+2026-07-09,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,27.344982147216797,final,sat
+2026-07-10,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,19.137182235717773,final,sat
+2026-07-11,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,11.56513786315918,final,sat
+2026-07-12,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,41.84823989868164,final,sat
+2026-07-13,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,40.25528335571289,final,sat
+2026-07-14,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.6009248495101929,final,sat
+2026-07-15,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,13.801237106323242,final,sat
+2026-07-16,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,50.19545364379883,final,sat
+2026-07-17,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.015357971191406,final,sat
+2026-07-18,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,13.9551362991333,final,sat
+2026-07-19,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,16.025142669677734,final,sat
+2026-07-20,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.320941686630249,final,sat
+2026-07-21,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,3.6900975704193115,final,sat
+2026-07-22,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.306723117828369,final,sat
+2026-07-23,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.640532493591309,final,sat
+2026-07-24,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,6.88522481918335,final,sat
+2026-07-25,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.3775295913219452,final,sat
+2026-07-26,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,24.320714950561523,final,sat
+2026-07-27,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.676141738891602,final,sat
+2026-07-28,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.6462391018867493,final,sat
+2026-07-29,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.24517956376075745,final,sat
+2026-07-30,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.4938749074935913,final,sat
+2026-07-31,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.02004861831665,final,sat
+2026-08-01,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,59.476566314697266,final,sat
+2026-08-02,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,11.850741386413574,final,sat
+2026-08-03,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,23.287221908569336,final,sat
+2026-08-04,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,18.242488861083984,final,sat
+2026-08-05,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,9.838410377502441,final,sat
+2026-08-06,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.371895670890808,final,sat
+2026-08-07,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,3.9818201065063477,final,sat
+2026-08-08,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.860769748687744,final,sat
+2026-08-09,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.195615530014038,final,sat
+2026-08-10,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.96167254447937,final,sat
+2026-08-11,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,final,sat
+2026-08-12,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.087323188781738,final,sat
+2026-08-13,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,8.983675956726074,final,sat
+2026-08-14,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.9941837191581726,final,sat
+2026-08-15,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,11.813186645507812,final,sat
+2026-08-16,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,7.791491508483887,final,sat
+2026-08-17,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.0784101486206055,final,sat
+2026-08-18,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.04931364208459854,final,sat
+2026-08-19,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.3144782781600952,final,sat
+2026-08-20,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.2010592669248581,final,sat
+2026-08-21,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,14.211623191833496,final,sat
+2026-08-22,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,27.06998634338379,final,sat
+2026-08-23,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.08466100692749,final,sat
+2026-08-24,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.38690951466560364,final,sat
+2026-08-25,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.45088398456573486,final,sat
+2026-08-26,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.9176183342933655,final,sat
+2026-08-27,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,6.892855644226074,final,sat
+2026-08-28,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.464318871498108,final,sat
+2026-08-29,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,30.190523147583008,final,sat
+2026-08-30,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,3.499141216278076,final,sat
+2026-08-31,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.2634053230285645,final,sat
+2026-09-01,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.867609024047852,prelim,sat
+2026-09-02,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.9817806482315063,prelim,sat
+2026-09-03,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.498993396759033,prelim,sat
+2026-09-04,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,24.67088508605957,prelim,sat
+2026-09-05,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,5.9842939376831055,prelim,sat
+2026-09-06,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.533731460571289,prelim,sat
+2026-09-07,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,12.196257591247559,prelim,sat
+2026-09-08,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,2.3310036659240723,prelim,sat
+2026-09-09,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,29.159576416015625,prelim,sat
+2026-09-10,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,21.733936309814453,prelim,sat
+2026-09-11,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.8117287158966064,prelim,sat
+2026-09-12,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.607767641544342,prelim,sat
+2026-09-13,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0803486704826355,prelim,sat
+2026-09-14,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.6699814796447754,prelim,sat
+2026-09-15,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.8147630095481873,prelim,sat
+2026-09-16,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,23.238037109375,prelim,sat
+2026-09-17,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,11.010830879211426,prelim,sat
+2026-09-18,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,4.822314262390137,prelim,sat
+2026-09-19,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.03982791304588318,prelim,sat
+2026-09-20,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,prelim,sat
+2026-09-21,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,0.0,prelim,sat
+2026-09-22,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.1486634016036987,prelim,sat
+2026-09-23,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,1.4566328525543213,prelim,sat
+2026-09-24,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,18.7595157623291,prelim,sat
+2026-09-25,chanpatia_burhigandak,Chanpatia,Burhi Gandak,Pashchim Champaran,26.96027778,84.53555556,10.501434326171875,prelim,sat
+2026-06-01,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-02,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-03,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,7.578426837921143,final,sat
+2026-06-04,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-05,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,7.578426837921143,final,sat
+2026-06-06,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-07,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,5.64642858505249,final,sat
+2026-06-08,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.572726726531982,final,sat
+2026-06-09,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-10,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.791121006011963,final,sat
+2026-06-11,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,34.548858642578125,final,sat
+2026-06-12,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-13,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-14,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.9192718267440796,final,sat
+2026-06-15,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-16,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.004847109317779541,final,sat
+2026-06-17,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.4091393947601318,final,sat
+2026-06-18,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-19,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,19.294708251953125,final,sat
+2026-06-20,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.799785852432251,final,sat
+2026-06-21,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.131349802017212,final,sat
+2026-06-22,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,36.0634765625,final,sat
+2026-06-23,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-24,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-06-25,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.700985908508301,final,sat
+2026-06-26,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.708536386489868,final,sat
+2026-06-27,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.724213600158691,final,sat
+2026-06-28,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,11.636563301086426,final,sat
+2026-06-29,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.43433627486228943,final,sat
+2026-06-30,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,21.41439437866211,final,sat
+2026-07-01,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.5076462030410767,final,sat
+2026-07-02,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.13332998752593994,final,sat
+2026-07-03,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.1807437539100647,final,sat
+2026-07-04,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.02062678337097168,final,sat
+2026-07-05,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-07-06,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.45371147990226746,final,sat
+2026-07-07,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.973759889602661,final,sat
+2026-07-08,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.307175397872925,final,sat
+2026-07-09,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,20.647443771362305,final,sat
+2026-07-10,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.509787082672119,final,sat
+2026-07-11,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.5757263898849487,final,sat
+2026-07-12,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,30.65574836730957,final,sat
+2026-07-13,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,47.312339782714844,final,sat
+2026-07-14,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.138224720954895,final,sat
+2026-07-15,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,3.465548276901245,final,sat
+2026-07-16,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,39.10268020629883,final,sat
+2026-07-17,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.8709193468093872,final,sat
+2026-07-18,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,14.720596313476562,final,sat
+2026-07-19,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,27.467233657836914,final,sat
+2026-07-20,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,8.6604642868042,final,sat
+2026-07-21,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.6980156898498535,final,sat
+2026-07-22,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.4643481969833374,final,sat
+2026-07-23,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.2940168380737305,final,sat
+2026-07-24,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.7205553650856018,final,sat
+2026-07-25,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-07-26,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,16.722286224365234,final,sat
+2026-07-27,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.6001906394958496,final,sat
+2026-07-28,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-07-29,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.1918402910232544,final,sat
+2026-07-30,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,6.673974990844727,final,sat
+2026-07-31,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,7.476944923400879,final,sat
+2026-08-01,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,22.988954544067383,final,sat
+2026-08-02,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,27.36149024963379,final,sat
+2026-08-03,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,24.02327537536621,final,sat
+2026-08-04,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,34.10179138183594,final,sat
+2026-08-05,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,30.078773498535156,final,sat
+2026-08-06,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.13933749496936798,final,sat
+2026-08-07,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.3475276231765747,final,sat
+2026-08-08,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-08-09,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.2549031972885132,final,sat
+2026-08-10,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.485447883605957,final,sat
+2026-08-11,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,final,sat
+2026-08-12,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.43031495809555054,final,sat
+2026-08-13,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,22.20707130432129,final,sat
+2026-08-14,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.21945038437843323,final,sat
+2026-08-15,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.39222463965415955,final,sat
+2026-08-16,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,12.188488960266113,final,sat
+2026-08-17,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.173211097717285,final,sat
+2026-08-18,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.6369368433952332,final,sat
+2026-08-19,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.509067952632904,final,sat
+2026-08-20,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.4208284914493561,final,sat
+2026-08-21,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,4.857142925262451,final,sat
+2026-08-22,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.3971493244171143,final,sat
+2026-08-23,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,13.02642822265625,final,sat
+2026-08-24,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.9719158411026,final,sat
+2026-08-25,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.5638367533683777,final,sat
+2026-08-26,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.17393611371517181,final,sat
+2026-08-27,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,5.520508766174316,final,sat
+2026-08-28,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.519050657749176,final,sat
+2026-08-29,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,26.78997230529785,final,sat
+2026-08-30,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,5.709028720855713,final,sat
+2026-08-31,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.114734172821045,final,sat
+2026-09-01,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.22878360748291,prelim,sat
+2026-09-02,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.760470390319824,prelim,sat
+2026-09-03,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,2.006192207336426,prelim,sat
+2026-09-04,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,11.394458770751953,prelim,sat
+2026-09-05,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,8.47464370727539,prelim,sat
+2026-09-06,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,7.54860258102417,prelim,sat
+2026-09-07,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,15.394537925720215,prelim,sat
+2026-09-08,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.8896125555038452,prelim,sat
+2026-09-09,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,18.13605499267578,prelim,sat
+2026-09-10,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,10.039624214172363,prelim,sat
+2026-09-11,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.4131861925125122,prelim,sat
+2026-09-12,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.400657594203949,prelim,sat
+2026-09-13,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,prelim,sat
+2026-09-14,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,9.17503547668457,prelim,sat
+2026-09-15,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.6261847615242004,prelim,sat
+2026-09-16,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.141780138015747,prelim,sat
+2026-09-17,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,18.96994972229004,prelim,sat
+2026-09-18,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.43237823247909546,prelim,sat
+2026-09-19,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,prelim,sat
+2026-09-20,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,prelim,sat
+2026-09-21,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,0.0,prelim,sat
+2026-09-22,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,1.988886833190918,prelim,sat
+2026-09-23,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,12.869149208068848,prelim,sat
+2026-09-24,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,45.08177185058594,prelim,sat
+2026-09-25,chatia_gandak,Chatia,Gandak,Purba Champaran,26.53277778,84.55861111,10.557666778564453,prelim,sat
+2026-06-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,13.272418975830078,final,sat
+2026-06-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,9.655284881591797,final,sat
+2026-06-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.0377988815307617,final,sat
+2026-06-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.40705144405365,final,sat
+2026-06-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.0674183368682861,final,sat
+2026-06-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,19.20975112915039,final,sat
+2026-06-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,6.078120231628418,final,sat
+2026-06-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.0621435642242432,final,sat
+2026-06-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,27.572797775268555,final,sat
+2026-06-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.28188732266426086,final,sat
+2026-06-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,8.942927360534668,final,sat
+2026-06-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,41.5971794128418,final,sat
+2026-06-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-06-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,3.9279401302337646,final,sat
+2026-06-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,14.040980339050293,final,sat
+2026-06-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,7.742842197418213,final,sat
+2026-06-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,11.472908973693848,final,sat
+2026-06-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.2033233642578125,final,sat
+2026-06-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.1782426834106445,final,sat
+2026-07-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.7907192707061768,final,sat
+2026-07-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.032722730189561844,final,sat
+2026-07-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.031319763511419296,final,sat
+2026-07-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.5047717690467834,final,sat
+2026-07-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-07-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.795532703399658,final,sat
+2026-07-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.594665288925171,final,sat
+2026-07-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.9184510707855225,final,sat
+2026-07-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,12.806628227233887,final,sat
+2026-07-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.743027210235596,final,sat
+2026-07-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.3564799726009369,final,sat
+2026-07-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,17.492034912109375,final,sat
+2026-07-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,38.85636901855469,final,sat
+2026-07-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,9.049397468566895,final,sat
+2026-07-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.5372273325920105,final,sat
+2026-07-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,27.918399810791016,final,sat
+2026-07-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.9838730096817017,final,sat
+2026-07-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,9.249462127685547,final,sat
+2026-07-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,12.815807342529297,final,sat
+2026-07-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,7.084696292877197,final,sat
+2026-07-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.16253913938999176,final,sat
+2026-07-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.8836671113967896,final,sat
+2026-07-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.3072872757911682,final,sat
+2026-07-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.2202917337417603,final,sat
+2026-07-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-07-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,7.6003031730651855,final,sat
+2026-07-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,3.2753233909606934,final,sat
+2026-07-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.22235502302646637,final,sat
+2026-07-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,14.796462059020996,final,sat
+2026-07-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,16.114866256713867,final,sat
+2026-07-31,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,14.074464797973633,final,sat
+2026-08-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,6.844455242156982,final,sat
+2026-08-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,18.512279510498047,final,sat
+2026-08-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,35.664222717285156,final,sat
+2026-08-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,16.682907104492188,final,sat
+2026-08-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,27.48411750793457,final,sat
+2026-08-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.250337839126587,final,sat
+2026-08-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,4.530256748199463,final,sat
+2026-08-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-08-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.2040749788284302,final,sat
+2026-08-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.5814952850341797,final,sat
+2026-08-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-08-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.6156095266342163,final,sat
+2026-08-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,20.33385467529297,final,sat
+2026-08-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.38411158323287964,final,sat
+2026-08-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.36489349603652954,final,sat
+2026-08-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,12.97530746459961,final,sat
+2026-08-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.186893463134766,final,sat
+2026-08-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.658440351486206,final,sat
+2026-08-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,final,sat
+2026-08-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.145032286643982,final,sat
+2026-08-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.84191632270813,final,sat
+2026-08-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.045267105102539,final,sat
+2026-08-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,6.53899621963501,final,sat
+2026-08-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,7.9268107414245605,final,sat
+2026-08-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.602555751800537,final,sat
+2026-08-26,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.19353893399238586,final,sat
+2026-08-27,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,6.578050136566162,final,sat
+2026-08-28,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.41139698028564453,final,sat
+2026-08-29,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,17.243858337402344,final,sat
+2026-08-30,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,10.76539134979248,final,sat
+2026-08-31,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,9.806715965270996,final,sat
+2026-09-01,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.5929133892059326,prelim,sat
+2026-09-02,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.3728089332580566,prelim,sat
+2026-09-03,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,4.700371742248535,prelim,sat
+2026-09-04,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,7.866026401519775,prelim,sat
+2026-09-05,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,3.265254259109497,prelim,sat
+2026-09-06,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,8.865253448486328,prelim,sat
+2026-09-07,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,4.3960161209106445,prelim,sat
+2026-09-08,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,1.6463180780410767,prelim,sat
+2026-09-09,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,35.554443359375,prelim,sat
+2026-09-10,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,14.978843688964844,prelim,sat
+2026-09-11,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,3.659411907196045,prelim,sat
+2026-09-12,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.5975951552391052,prelim,sat
+2026-09-13,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,prelim,sat
+2026-09-14,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,5.074010848999023,prelim,sat
+2026-09-15,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.012306802906095982,prelim,sat
+2026-09-16,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,2.61785888671875,prelim,sat
+2026-09-17,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,4.195811748504639,prelim,sat
+2026-09-18,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,12.040986061096191,prelim,sat
+2026-09-19,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,prelim,sat
+2026-09-20,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0,prelim,sat
+2026-09-21,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,0.0523718036711216,prelim,sat
+2026-09-22,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,13.28269100189209,prelim,sat
+2026-09-23,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,12.591127395629883,prelim,sat
+2026-09-24,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,41.11136245727539,prelim,sat
+2026-09-25,dumariaghat_gandak,Dumariaghat,Gandak,Gopalganj,26.35888889,84.74805556,8.063608169555664,prelim,sat

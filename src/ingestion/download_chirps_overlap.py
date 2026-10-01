@@ -8,15 +8,14 @@ rainfall.csv is left untouched.
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
+import os
 from pathlib import Path
 
 import pandas as pd
 import rasterio
-import requests
-from rasterio.io import MemoryFile
 import yaml
-from dhis2eo.data.chc.chirps3.daily import url_for_day
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 CONFIG_FILE = PROJECT_ROOT / "configs" / "bihar.yaml"
@@ -28,6 +27,20 @@ FINAL_END_DATE = "2026-08-31"
 PRELIM_START_DATE = "2026-09-01"
 PRELIM_END_DATE = "2026-09-25"
 FLAVOR = "sat"
+MAX_WORKERS = 6
+CHIRPS_DAILY_BASE_URL = os.environ.get(
+    "CHIRPS_DAILY_BASE_URL",
+    "https://data.chc.ucsb.edu/products/CHIRPS/v3.0/daily",
+).rstrip("/")
+
+
+def url_for_day(day: date, stage: str, flavor: str) -> str:
+    """Build the public CHIRPS v3 daily GeoTIFF URL for a date."""
+    product = "prelim" if stage == "prelim" else flavor
+    filename = f"chirps-v3.0.{product}.{day:%Y.%m.%d}.tif"
+    return (
+        f"{CHIRPS_DAILY_BASE_URL}/{stage}/{flavor}/{day.year}/{filename}"
+    )
 
 
 def load_stations() -> list[dict]:
@@ -44,41 +57,52 @@ def dates_between(start: str, end: str):
         current += timedelta(days=1)
 
 
+def read_day(day: date, stations: list[dict]) -> tuple[str, str, list[dict]]:
+    day_text = day.isoformat()
+    stage = "final" if day_text <= FINAL_END_DATE else "prelim"
+    url = url_for_day(day, stage=stage, flavor=FLAVOR)
+    raster_url = url if url.startswith("/vsicurl/") else f"/vsicurl/{url}"
+    with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN="EMPTY_DIR"):
+        with rasterio.open(raster_url) as raster:
+            if raster.crs is None or raster.crs.to_epsg() != 4326:
+                raise ValueError(f"Unexpected CRS for CHIRPS raster {url}: {raster.crs}")
+            values = list(
+                raster.sample(
+                    [(s["longitude"], s["latitude"]) for s in stations],
+                    masked=True,
+                )
+            )
+
+    rows = []
+    for station, sample in zip(stations, values):
+        amount = float(sample[0]) if sample.count() else float("nan")
+        rows.append({
+            "date": day_text,
+            "station_id": station["station_id"],
+            "station_name": station["name"],
+            "river": station["river"],
+            "district": station["district"],
+            "latitude": station["latitude"],
+            "longitude": station["longitude"],
+            "rainfall_mm": amount,
+            "chirps_stage": stage,
+            "chirps_flavor": FLAVOR,
+        })
+    return day_text, stage, rows
+
+
 def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     stations = load_stations()
-    bbox = (
-        min(item["longitude"] for item in stations) - 0.10,
-        min(item["latitude"] for item in stations) - 0.10,
-        max(item["longitude"] for item in stations) + 0.10,
-        max(item["latitude"] for item in stations) + 0.10,
-    )
 
     records: list[dict] = []
-    for day in dates_between(START_DATE, PRELIM_END_DATE):
-        day_text = day.isoformat()
-        stage = "final" if day_text <= FINAL_END_DATE else "prelim"
-        url = url_for_day(day, stage=stage, flavor=FLAVOR)
-        response = requests.get(url, timeout=90)
-        response.raise_for_status()
-        with MemoryFile(response.content) as memfile:
-            with memfile.open() as raster:
-                values = list(raster.sample([(s["longitude"], s["latitude"]) for s in stations], masked=True))
-        for station, sample in zip(stations, values):
-            amount = float(sample[0]) if sample.count() else float("nan")
-            records.append({
-                "date": day_text,
-                "station_id": station["station_id"],
-                "station_name": station["name"],
-                "river": station["river"],
-                "district": station["district"],
-                "latitude": station["latitude"],
-                "longitude": station["longitude"],
-                "rainfall_mm": amount,
-                "chirps_stage": stage,
-                "chirps_flavor": FLAVOR,
-            })
-        print(f"Read {day_text} ({stage})")
+    days = list(dates_between(START_DATE, PRELIM_END_DATE))
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = {executor.submit(read_day, day, stations): day for day in days}
+        for future in as_completed(futures):
+            day_text, stage, day_rows = future.result()
+            records.extend(day_rows)
+            print(f"Read {day_text} ({stage}); {len(records) // len(stations)}/{len(days)} days complete")
 
     rainfall = pd.DataFrame(records).sort_values(["station_id", "date"])
     rainfall.to_csv(OUTPUT_FILE, index=False)

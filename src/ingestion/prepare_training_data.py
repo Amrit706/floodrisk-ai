@@ -183,9 +183,7 @@ def main() -> None:
     rainfall = rainfall[["date", "station_id", "rainfall_mm", "chirps_stage", "chirps_flavor"]]
     daily = daily_levels.merge(rainfall, on=["date", "station_id"], how="inner", validate="one_to_one")
 
-    for column in ("name", "river", "district", "latitude", "longitude", "warning_level_m", "danger_level_m", "highest_flood_level_m"):
-        daily[column] = daily["station_id"].map(metadata[column])
-    daily = daily.rename(columns={"name": "station_name", "highest_flood_level_m": "hfl_m"})
+    # daily_levels already carries station metadata and its normalized names.
     daily["risk_label"] = daily.apply(
         lambda row: risk_label(
             row["water_level_m"],
@@ -249,4 +247,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
