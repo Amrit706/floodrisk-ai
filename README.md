@@ -2,7 +2,7 @@
 
 ### Citizen-facing, 24-hour river-risk research prototype for the Gandak pilot in Bihar
 
-[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/) [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/) [![XGBoost](https://img.shields.io/badge/Model-XGBoost-189A45)](https://xgboost.readthedocs.io/) [![Data](https://img.shields.io/badge/Rainfall-CHIRPS%20v3-2E8B57)](https://chc.ucsb.edu/data/chirps3) [![Data](https://img.shields.io/badge/River%20levels-Bihar%20WRD-1565C0)](https://wrd.bihar.gov.in/rivers/2026/waterLevel.php)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/) [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/) [![Machine Learning](https://img.shields.io/badge/Machine%20Learning-scikit--learn-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/) [![Random Forest](https://img.shields.io/badge/Selected%20model-Random%20Forest-228B22)](https://scikit-learn.org/stable/modules/ensemble.html#forest) [![XGBoost](https://img.shields.io/badge/Compared%20model-XGBoost-189A45)](https://xgboost.readthedocs.io/) [![Data](https://img.shields.io/badge/Rainfall-CHIRPS%20v3-2E8B57)](https://chc.ucsb.edu/data/chirps3) [![Data](https://img.shields.io/badge/River%20levels-Bihar%20WRD-1565C0)](https://wrd.bihar.gov.in/rivers/2026/waterLevel.php)
 
 > FloodRiskAI estimates the river-risk category about 24 hours after a selected observation and explains the historical signals behind the result. It is a **historical replay prototype**, not a live warning service.
 
@@ -157,10 +157,6 @@ Generated data and model files may be excluded from some Git versions. Check the
 - Add documented Extreme examples and check threshold labels with domain sources.
 - Improve prediction calibration and live data handling before considering real-time use.
 
-## 🎥 Hackathon demo
-
-Show the citizen problem, select one supported station and historical date, explain the model output and its factors, then summarize the model comparison and limitations. Say explicitly that this is a historical replay prototype—not a live warning service.
-
 ## 🤝 AI assistance and authorship
 
 AI tools assisted with code editing and debugging. The project submitter should review the data sources, understand the pipeline and limitations, and be able to explain and maintain the submitted work.
@@ -168,4 +164,5 @@ AI tools assisted with code editing and debugging. The project submitter should 
 ---
 
 <p align="center"><strong>🌧️ Clearer context from river and rainfall data—one careful prototype at a time.</strong></p>
+
 
