@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Audit features, tune Random Forests with date-based CV, and evaluate once on a later holdout."""
+"""Tune tree models with chronological validation and quantify small-sample uncertainty."""
 
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
+from statistics import NormalDist
 
 import joblib
 import numpy as np
@@ -20,11 +22,16 @@ from sklearn.metrics import (
     f1_score,
     make_scorer,
 )
-from sklearn.model_selection import GridSearchCV, TimeSeriesSplit, cross_validate
+from sklearn.model_selection import GridSearchCV, RandomizedSearchCV, TimeSeriesSplit, cross_validate
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from scipy.stats import t as student_t
 
 ROOT = Path(__file__).resolve().parents[2]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from src.models.balanced_xgb import BalancedXGBClassifier
+
 DATA_FILE = ROOT / "data" / "processed" / "flood_training_24h.csv"
 MODEL_DIR = ROOT / "models"
 MODEL_FILE = MODEL_DIR / "flood_model.pkl"
@@ -48,6 +55,19 @@ PARAM_GRID = {
     "classifier__min_samples_leaf": [2, 4],
     "classifier__max_features": ["sqrt", 0.8],
 }
+XGB_PARAM_DISTRIBUTIONS = {
+    "classifier__n_estimators": [50, 100, 200],
+    "classifier__max_depth": [1, 2, 3, 4],
+    "classifier__learning_rate": [0.02, 0.05, 0.1],
+    "classifier__min_child_weight": [1, 3, 5, 8],
+    "classifier__gamma": [0.0, 0.25, 1.0],
+    "classifier__subsample": [0.7, 0.85, 1.0],
+    "classifier__colsample_bytree": [0.7, 0.85, 1.0],
+    "classifier__reg_lambda": [1.0, 5.0, 15.0],
+    "classifier__reg_alpha": [0.0, 0.1, 1.0],
+    "classifier__class_weight_strength": [0.0, 0.25, 0.5, 1.0],
+}
+XGB_SEARCH_ITERATIONS = 32
 
 
 def make_features(data: pd.DataFrame) -> pd.DataFrame:
@@ -89,6 +109,21 @@ def make_model(use_pca: bool = False) -> Pipeline:
                     n_jobs=1,
                 ),
             ),
+        ]
+    )
+
+
+def make_xgb_model() -> Pipeline:
+    transform = ColumnTransformer(
+        [
+            ("station", OneHotEncoder(handle_unknown="ignore"), CATEGORICAL_FEATURES),
+            ("numeric", "passthrough", NUMERIC_FEATURES),
+        ]
+    )
+    return Pipeline(
+        [
+            ("features", transform),
+            ("classifier", BalancedXGBClassifier(random_state=42, n_jobs=1)),
         ]
     )
 
@@ -163,6 +198,86 @@ def tune(x: pd.DataFrame, y: pd.Series, folds, use_pca: bool) -> GridSearchCV:
     return search
 
 
+def tune_xgboost(x: pd.DataFrame, y: pd.Series, folds) -> RandomizedSearchCV:
+    cv_labels = [label for label in ALL_LABELS if label in set(y)]
+    search = RandomizedSearchCV(
+        estimator=make_xgb_model(),
+        param_distributions=XGB_PARAM_DISTRIBUTIONS,
+        n_iter=XGB_SEARCH_ITERATIONS,
+        scoring={
+            "accuracy": "accuracy",
+            "balanced_accuracy": "balanced_accuracy",
+            "macro_f1": make_scorer(f1_score, average="macro", labels=cv_labels, zero_division=0),
+        },
+        refit="accuracy",
+        cv=folds,
+        n_jobs=1,
+        random_state=42,
+        return_train_score=False,
+        error_score="raise",
+    )
+    search.fit(x, y)
+    return search
+
+
+def candidate_metrics(search) -> dict:
+    index = search.best_index_
+    n_folds = 0
+    while f"split{n_folds}_test_accuracy" in search.cv_results_:
+        n_folds += 1
+    fold_scores = [
+        float(search.cv_results_[f"split{fold}_test_accuracy"][index])
+        for fold in range(n_folds)
+    ]
+    return {
+        "cv_accuracy_mean": float(np.mean(fold_scores)),
+        "cv_accuracy_std": float(np.std(fold_scores)),
+        "cv_accuracy_95_ci": cv_accuracy_interval(fold_scores),
+        "cv_accuracy_fold_scores": fold_scores,
+        "cv_macro_f1_mean": float(search.cv_results_["mean_test_macro_f1"][index]),
+        "best_params": search.best_params_,
+    }
+
+
+def cv_accuracy_interval(scores: list[float], confidence: float = 0.95) -> list[float]:
+    """Approximate t interval over chronological fold scores (descriptive only)."""
+    values = np.asarray(scores, dtype=float)
+    if len(values) < 2:
+        return [float(values.mean()), float(values.mean())]
+    critical = float(student_t.ppf((1.0 + confidence) / 2.0, df=len(values) - 1))
+    margin = critical * float(np.std(values, ddof=1)) / np.sqrt(len(values))
+    return [max(0.0, float(values.mean() - margin)), min(1.0, float(values.mean() + margin))]
+
+
+def date_block_bootstrap_accuracy_interval(
+    y_true: pd.Series,
+    y_pred: np.ndarray,
+    dates: pd.Series,
+    *,
+    block_days: int = 3,
+    replicates: int = 5000,
+    seed: int = 42,
+) -> list[float]:
+    """Bootstrap holdout accuracy by contiguous date blocks to respect clustering."""
+    date_values = pd.to_datetime(dates).dt.normalize().to_numpy()
+    unique_dates = np.array(sorted(pd.unique(date_values)))
+    row_indices = [np.flatnonzero(date_values == date) for date in unique_dates]
+    block_days = min(block_days, len(unique_dates))
+    blocks_per_sample = int(np.ceil(len(unique_dates) / block_days))
+    rng = np.random.default_rng(seed)
+    correct = (np.asarray(y_true) == np.asarray(y_pred)).astype(float)
+    boot_scores = np.empty(replicates)
+    for replicate in range(replicates):
+        starts = rng.integers(0, len(unique_dates) - block_days + 1, size=blocks_per_sample)
+        sampled_dates = np.concatenate([
+            np.arange(start, start + block_days) for start in starts
+        ])[: len(unique_dates)]
+        sampled_rows = np.concatenate([row_indices[index] for index in sampled_dates])
+        boot_scores[replicate] = float(correct[sampled_rows].mean())
+    lower, upper = np.quantile(boot_scores, [0.025, 0.975])
+    return [float(lower), float(upper)]
+
+
 def main() -> None:
     data = pd.read_csv(DATA_FILE, parse_dates=["date", "target_date"])
     data = data.dropna(subset=[
@@ -196,12 +311,15 @@ def main() -> None:
     tuned = tune(x_train, y_train, cv_folds, use_pca=False)
     print("Tuning PCA + Random Forest across the same chronological folds...")
     pca_tuned = tune(x_train, y_train, cv_folds, use_pca=True)
+    print("Tuning class-weighted XGBoost across the same chronological folds...")
+    xgb_tuned = tune_xgboost(x_train, y_train, cv_folds)
 
     candidates = [
         ("tuned_random_forest", tuned),
         ("pca_random_forest", pca_tuned),
+        ("tuned_xgboost", xgb_tuned),
     ]
-    # Use the one-standard-error rule: if the CV difference is within noise,
+    # Use the one-standard-error rule: if scores are within fold variation,
     # prefer the simpler, more interpretable no-PCA forest.
     cv_accuracy = {
         name: float(search.cv_results_["mean_test_accuracy"][search.best_index_])
@@ -215,8 +333,6 @@ def main() -> None:
     selected = dict(candidates)[selected_name]
     model = selected.best_estimator_  # GridSearchCV refit uses all pre-holdout dates.
     predictions = model.predict(x_test)
-    probabilities = model.predict_proba(x_test)
-    classes = list(model.named_steps["classifier"].classes_)
     labels = [label for label in ALL_LABELS if label in set(y_test) | set(predictions)]
     report = classification_report(
         y_test, predictions, labels=labels, output_dict=True, zero_division=0
@@ -227,25 +343,32 @@ def main() -> None:
     persistence_accuracy = float(accuracy_score(y_test, persistence_predictions))
     persistence_macro_f1 = float(f1_score(y_test, persistence_predictions, labels=labels, average="macro", zero_division=0))
 
-    pca_diag = {
-        "tuned_random_forest": {
-            "cv_accuracy_mean": float(tuned.cv_results_["mean_test_accuracy"][tuned.best_index_]),
-            "cv_accuracy_std": float(tuned.cv_results_["std_test_accuracy"][tuned.best_index_]),
-            "cv_macro_f1_mean": float(tuned.cv_results_["mean_test_macro_f1"][tuned.best_index_]),
-            "best_params": tuned.best_params_,
-        },
-        "pca_random_forest": {
-            "cv_accuracy_mean": float(pca_tuned.cv_results_["mean_test_accuracy"][pca_tuned.best_index_]),
-            "cv_accuracy_std": float(pca_tuned.cv_results_["std_test_accuracy"][pca_tuned.best_index_]),
-            "cv_macro_f1_mean": float(pca_tuned.cv_results_["mean_test_macro_f1"][pca_tuned.best_index_]),
-            "best_params": pca_tuned.best_params_,
-        },
+    candidate_diag = {
+        "tuned_random_forest": candidate_metrics(tuned),
+        "pca_random_forest": candidate_metrics(pca_tuned),
+        "tuned_xgboost": candidate_metrics(xgb_tuned),
     }
+
+    holdout_comparison = {}
+    for name, search in candidates:
+        candidate_prediction = search.best_estimator_.predict(x_test)
+        holdout_comparison[name] = {
+            "accuracy": float(accuracy_score(y_test, candidate_prediction)),
+            "accuracy_95_ci_date_block_bootstrap": date_block_bootstrap_accuracy_interval(
+                y_test, candidate_prediction, test["date"]
+            ),
+            "macro_f1": float(f1_score(y_test, candidate_prediction, labels=labels, average="macro", zero_division=0)),
+        }
+
+    persistence_cv_scores = [
+        float(accuracy_score(train.iloc[valid_idx][TARGET], train.iloc[valid_idx]["risk_label"]))
+        for _, valid_idx in cv_folds
+    ]
 
     MODEL_DIR.mkdir(parents=True, exist_ok=True)
     joblib.dump(model, MODEL_FILE)
     evaluation = {
-        "model": "RandomForestClassifier",
+        "model": "BalancedXGBClassifier" if selected_name == "tuned_xgboost" else "RandomForestClassifier",
         "selected_candidate": selected_name,
         "pca_used": selected_name == "pca_random_forest",
         "best_params": selected.best_params_,
@@ -262,27 +385,25 @@ def main() -> None:
             "dates_available_for_cv": int(cv_date_count),
             "baseline": baseline_cv,
             "persistence_baseline_accuracy": {
-                "fold_scores": [
-                    float(accuracy_score(train.iloc[valid_idx][TARGET], train.iloc[valid_idx]["risk_label"]))
-                    for _, valid_idx in cv_folds
-                ],
-                "mean": float(np.mean([
-                    accuracy_score(train.iloc[valid_idx][TARGET], train.iloc[valid_idx]["risk_label"])
-                    for _, valid_idx in cv_folds
-                ])),
-                "std": float(np.std([
-                    accuracy_score(train.iloc[valid_idx][TARGET], train.iloc[valid_idx]["risk_label"])
-                    for _, valid_idx in cv_folds
-                ])),
+                "fold_scores": persistence_cv_scores,
+                "mean": float(np.mean(persistence_cv_scores)),
+                "std": float(np.std(persistence_cv_scores)),
+                "approximate_95_ci": cv_accuracy_interval(persistence_cv_scores),
             },
-            "candidate_comparison": pca_diag,
-            "selection_rule": "One-standard-error rule for CV accuracy; prefer no PCA when its score is statistically close to PCA.",
+            "candidate_comparison": candidate_diag,
+            "selection_rule": "Choose by chronological CV accuracy; within one standard error prefer the non-PCA Random Forest for simplicity. XGBoost uses randomized hyperparameter search.",
+            "confidence_interval_note": "Approximate 95% Student-t intervals use only four chronological fold scores. The folds are temporally ordered and share training history, so intervals are descriptive, not independent-sample guarantees.",
         },
+        "holdout_candidate_comparison": holdout_comparison,
+        "holdout_interval_note": "Approximate 95% moving date-block bootstrap intervals use 3-day blocks over only the 23 later dates. This holdout has already been viewed in prior model iterations and is exploratory, not a fresh final test.",
         "accuracy": accuracy,
         "macro_f1": macro_f1,
         "balanced_accuracy": float(balanced_accuracy_score(y_test, predictions)),
         "persistence_baseline_holdout": {
             "accuracy": persistence_accuracy,
+            "accuracy_95_ci_date_block_bootstrap": date_block_bootstrap_accuracy_interval(
+                y_test, persistence_predictions.to_numpy(), test["date"]
+            ),
             "macro_f1": persistence_macro_f1,
             "description": "Predict the next-day category equals the observed current-day risk_label.",
         },
@@ -293,7 +414,7 @@ def main() -> None:
         "classes_absent_from_data": sorted(set(ALL_LABELS) - set(data[TARGET])),
         "feature_columns": FEATURES,
         "caveat": "Only 228 examples from two stations in one short period. Scores are not operational flood-warning validation.",
-        "class_score_note": "Random Forest predict_proba outputs are not calibrated probabilities of flooding.",
+        "class_score_note": "Model predict_proba outputs are uncalibrated class scores, not calibrated probabilities of flooding.",
     }
     REPORT_FILE.write_text(json.dumps(evaluation, indent=2), encoding="utf-8")
 
@@ -325,8 +446,13 @@ def main() -> None:
     print(f"Test accuracy: {accuracy:.1%}; macro F1: {macro_f1:.3f}; balanced accuracy: {evaluation['balanced_accuracy']:.3f}")
     print(f"Persistence baseline accuracy: CV {evaluation['cv']['persistence_baseline_accuracy']['mean']:.1%}; holdout {persistence_accuracy:.1%}")
     print("CV candidate comparison:")
-    for name, values in pca_diag.items():
-        print(f"  {name}: accuracy={values['cv_accuracy_mean']:.3f} +/- {values['cv_accuracy_std']:.3f}; macro_f1={values['cv_macro_f1_mean']:.3f}")
+    for name, values in candidate_diag.items():
+        ci_low, ci_high = values["cv_accuracy_95_ci"]
+        print(f"  {name}: accuracy={values['cv_accuracy_mean']:.3f} +/- {values['cv_accuracy_std']:.3f}; approximate CV 95% CI [{ci_low:.3f}, {ci_high:.3f}]; macro_f1={values['cv_macro_f1_mean']:.3f}")
+    print("Later-date holdout candidate comparison:")
+    for name, values in holdout_comparison.items():
+        ci_low, ci_high = values["accuracy_95_ci_date_block_bootstrap"]
+        print(f"  {name}: accuracy={values['accuracy']:.3f}; date-block bootstrap 95% CI [{ci_low:.3f}, {ci_high:.3f}]; macro_f1={values['macro_f1']:.3f}")
     print(f"Classes absent from the full dataset: {', '.join(evaluation['classes_absent_from_data']) or 'none'}")
     print(f"Saved model: {MODEL_FILE}")
     print(f"Saved evaluation: {REPORT_FILE}")

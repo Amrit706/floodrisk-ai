@@ -59,12 +59,26 @@
         1.0
       ],
       "mean": 0.9553571428571429,
-      "std": 0.04639421805988062
+      "std": 0.04639421805988062,
+      "approximate_95_ci": [
+        0.8701130453941717,
+        1.0
+      ]
     },
     "candidate_comparison": {
       "tuned_random_forest": {
         "cv_accuracy_mean": 0.875,
         "cv_accuracy_std": 0.16071428571428573,
+        "cv_accuracy_95_ci": [
+          0.5797057842975608,
+          1.0
+        ],
+        "cv_accuracy_fold_scores": [
+          0.6071428571428571,
+          0.8928571428571429,
+          1.0,
+          1.0
+        ],
         "cv_macro_f1_mean": 0.658645276292335,
         "best_params": {
           "classifier__max_depth": null,
@@ -76,6 +90,16 @@
       "pca_random_forest": {
         "cv_accuracy_mean": 0.8839285714285714,
         "cv_accuracy_std": 0.16244111963089514,
+        "cv_accuracy_95_ci": [
+          0.5854614948644657,
+          1.0
+        ],
+        "cv_accuracy_fold_scores": [
+          0.6071428571428571,
+          0.9285714285714286,
+          1.0,
+          1.0
+        ],
         "cv_macro_f1_mean": 0.6717728758169934,
         "best_params": {
           "classifier__max_depth": null,
@@ -83,15 +107,74 @@
           "classifier__min_samples_leaf": 4,
           "classifier__n_estimators": 100
         }
+      },
+      "tuned_xgboost": {
+        "cv_accuracy_mean": 0.9107142857142857,
+        "cv_accuracy_std": 0.11709711650539288,
+        "cv_accuracy_95_ci": [
+          0.6955616561530946,
+          1.0
+        ],
+        "cv_accuracy_fold_scores": [
+          0.7142857142857143,
+          0.9285714285714286,
+          1.0,
+          1.0
+        ],
+        "cv_macro_f1_mean": 0.6923611111111111,
+        "best_params": {
+          "classifier__subsample": 1.0,
+          "classifier__reg_lambda": 15.0,
+          "classifier__reg_alpha": 1.0,
+          "classifier__n_estimators": 200,
+          "classifier__min_child_weight": 8,
+          "classifier__max_depth": 3,
+          "classifier__learning_rate": 0.05,
+          "classifier__gamma": 1.0,
+          "classifier__colsample_bytree": 1.0,
+          "classifier__class_weight_strength": 0.5
+        }
       }
     },
-    "selection_rule": "One-standard-error rule for CV accuracy; prefer no PCA when its score is statistically close to PCA."
+    "selection_rule": "Choose by chronological CV accuracy; within one standard error prefer the non-PCA Random Forest for simplicity. XGBoost uses randomized hyperparameter search.",
+    "confidence_interval_note": "Approximate 95% Student-t intervals use only four chronological fold scores. The folds are temporally ordered and share training history, so intervals are descriptive, not independent-sample guarantees."
   },
+  "holdout_candidate_comparison": {
+    "tuned_random_forest": {
+      "accuracy": 0.9565217391304348,
+      "accuracy_95_ci_date_block_bootstrap": [
+        0.8913043478260869,
+        1.0
+      ],
+      "macro_f1": 0.9361111111111112
+    },
+    "pca_random_forest": {
+      "accuracy": 0.9347826086956522,
+      "accuracy_95_ci_date_block_bootstrap": [
+        0.8695652173913043,
+        0.9782608695652174
+      ],
+      "macro_f1": 0.9010752688172042
+    },
+    "tuned_xgboost": {
+      "accuracy": 0.9565217391304348,
+      "accuracy_95_ci_date_block_bootstrap": [
+        0.8913043478260869,
+        1.0
+      ],
+      "macro_f1": 0.9361111111111112
+    }
+  },
+  "holdout_interval_note": "Approximate 95% moving date-block bootstrap intervals use 3-day blocks over only the 23 later dates. This holdout has already been viewed in prior model iterations and is exploratory, not a fresh final test.",
   "accuracy": 0.9565217391304348,
   "macro_f1": 0.9361111111111112,
   "balanced_accuracy": 0.9361111111111112,
   "persistence_baseline_holdout": {
     "accuracy": 0.9347826086956522,
+    "accuracy_95_ci_date_block_bootstrap": [
+      0.8695652173913043,
+      0.9782608695652174
+    ],
     "macro_f1": 0.9010752688172042,
     "description": "Predict the next-day category equals the observed current-day risk_label."
   },
@@ -168,5 +251,5 @@
     "rainfall_48_72h_mm"
   ],
   "caveat": "Only 228 examples from two stations in one short period. Scores are not operational flood-warning validation.",
-  "class_score_note": "Random Forest predict_proba outputs are not calibrated probabilities of flooding."
+  "class_score_note": "Model predict_proba outputs are uncalibrated class scores, not calibrated probabilities of flooding."
 }

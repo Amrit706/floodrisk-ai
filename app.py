@@ -72,7 +72,8 @@ def shap_explanations(pipeline, frame: pd.DataFrame, class_name: str) -> list[st
     transform = pipeline.named_steps["features"]
     classifier = pipeline.named_steps["classifier"]
     encoded = transform.transform(frame)
-    values = shap.TreeExplainer(classifier).shap_values(encoded)
+    shap_model = getattr(classifier, "estimator_", classifier)
+    values = shap.TreeExplainer(shap_model).shap_values(encoded)
     class_index = list(classifier.classes_).index(class_name)
     if isinstance(values, list):
         contributions = np.asarray(values[class_index])[0]
@@ -184,17 +185,49 @@ metric_cols = st.columns(3)
 metric_cols[0].metric("Later-date holdout accuracy", f"{report['accuracy']:.1%}")
 metric_cols[1].metric("Holdout macro F1", f"{report['macro_f1']:.3f}")
 metric_cols[2].metric("Holdout rows", str(report["test_rows"]))
-rf_cv = report["cv"]["candidate_comparison"]["tuned_random_forest"]
-pca_cv = report["cv"]["candidate_comparison"]["pca_random_forest"]
 persistence_cv = report["cv"]["persistence_baseline_accuracy"]
 persistence_test = report["persistence_baseline_holdout"]
-st.write(
-    f"The tuned forest averaged {rf_cv['cv_accuracy_mean']:.1%} accuracy across four "
-    f"chronological validation folds (fold SD {rf_cv['cv_accuracy_std']:.1%}). "
-    f"PCA averaged {pca_cv['cv_accuracy_mean']:.1%}; the current-category persistence "
-    f"baseline averaged {persistence_cv['mean']:.1%}. On the later holdout, persistence "
-    f"scored {persistence_test['accuracy']:.1%}."
-)
+comparison = report["cv"].get("candidate_comparison", {})
+holdout_comparison = report.get("holdout_candidate_comparison", {})
+if comparison:
+    model_names = {
+        "tuned_random_forest": "Random Forest",
+        "pca_random_forest": "PCA + Random Forest",
+        "tuned_xgboost": "Class-weighted XGBoost",
+    }
+    comparison_rows = []
+    for key, values in comparison.items():
+        holdout = holdout_comparison.get(key, {})
+        comparison_rows.append({
+            "Model": model_names.get(key, key),
+            "CV accuracy": values["cv_accuracy_mean"],
+            "CV 95% interval": "–".join(f"{bound:.1%}" for bound in values.get("cv_accuracy_95_ci", [])) or "not available",
+            "CV fold SD": values["cv_accuracy_std"],
+            "CV macro F1": values["cv_macro_f1_mean"],
+            "Holdout accuracy": holdout.get("accuracy"),
+            "Holdout 95% interval": "–".join(
+                f"{bound:.1%}" for bound in holdout.get("accuracy_95_ci_date_block_bootstrap", [])
+            ) or "not available",
+            "Holdout macro F1": holdout.get("macro_f1"),
+        })
+    st.dataframe(
+        pd.DataFrame(comparison_rows),
+        column_config={
+            "CV accuracy": st.column_config.NumberColumn(format="percent"),
+            "CV fold SD": st.column_config.NumberColumn(format="percent"),
+            "CV macro F1": st.column_config.NumberColumn(format="%.3f"),
+            "Holdout accuracy": st.column_config.NumberColumn(format="percent"),
+            "Holdout macro F1": st.column_config.NumberColumn(format="%.3f"),
+        },
+        hide_index=True,
+    )
+    st.write(
+        f"Selected using chronological cross-validation: **{report.get('model', 'Random Forest')}**. "
+        f"The current-category persistence reference averaged {persistence_cv['mean']:.1%} CV accuracy "
+        f"and scored {persistence_test['accuracy']:.1%} on the later holdout."
+    )
+    st.caption(report.get("cv", {}).get("confidence_interval_note", "CV intervals are not available in this report."))
+    st.caption(report.get("holdout_interval_note", "Holdout intervals are not available in this report."))
 st.caption(
     f"Holdout dates: {report['test_start']} to {report['test_end']}. "
     "Only two stations and a short period are represented. The fold variation is large, "
