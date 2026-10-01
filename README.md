@@ -6,8 +6,9 @@ FloodRiskAI is a citizen-facing research prototype that estimates the river-risk
 
 - Bihar station metadata and published danger/HFL thresholds in `configs/bihar.yaml`.
 - Bihar WRD dashboard river readings and CHIRPS v3 daily rainfall samples for 1 June–25 September 2026.
-- An alignment and feature-preparation pipeline for 24/48/72-hour rainfall totals, daily river-level change, and next-day risk labels.
-- A class-weighted Random Forest with a chronological holdout report.
+- An alignment and feature-preparation pipeline for daily river change, non-overlapping rainfall windows, and next-day risk labels.
+- Numeric-feature correlation/VIF diagnostics, four-fold chronological cross-validation, Random Forest hyperparameter tuning, and a PCA comparison.
+- A class-weighted Random Forest evaluated on later dates held out from tuning.
 - A Streamlit app for replaying an observation, viewing the model's next-day category, and comparing it with the historical target.
 
 The pilot data contains 228 training rows (114 per matched station). Its target classes are Normal, Above Normal, and Severe. No Extreme examples were present, so the model has not learned that category. Bagaha, Chanpatia, and Ahirwalia do not have matching river-station names in the supplied river-level export and are not included in the model.
@@ -30,7 +31,11 @@ The prepared training CSV and the trained model are included in this archive. Re
 
 ## Evaluation and limits
 
-The model evaluation uses a chronological 80/20 date split, with later dates held out. In the included run the holdout has 46 rows and macro F1 is about 0.90. That score is only a small pilot check: it comes from two stations and one short monsoon period, and the future label is derived from station danger/HFL thresholds. It does not establish forecast skill in other districts, seasons, or flood events. Random Forest class scores are not calibrated probabilities.
+The model evaluation uses a chronological 80/20 date split. The included later-date holdout has 46 rows; the tuned forest scored 95.7% accuracy (44/46) and 0.936 macro F1. This is not a 99% result and should not be presented as proof of real-world flood prediction.
+
+The training portion uses four expanding-window folds, with all stations on a date kept together. Tuned Random Forest cross-validation accuracy averaged 87.5% with a 16.1 percentage-point fold standard deviation. A PCA + Random Forest averaged 88.4% with a 16.2-point standard deviation. Since that 0.9-point difference is tiny relative to fold variation, the one-standard-error rule keeps the simpler no-PCA forest. Random Forests do not require orthogonal features.
+
+A simple reference that predicts tomorrow's category equals today's observed category scored 95.5% average cross-validation accuracy and 93.5% on the same holdout. The forest did better on the holdout, but worse across the four CV folds; there is not enough data to conclude it is reliably better. The project removes the duplicate `rainfall_mm` input, expresses river level relative to danger, and uses non-overlapping rainfall blocks. The remaining numeric VIF values are about 1.0-1.1. The target is defined from station thresholds, and only two stations from a short monsoon period are available. More years, additional verified stations, and event-based validation are needed before any operational claim. Random Forest class scores are not calibrated probabilities.
 
 River observations currently end on 29 September 2026; CHIRPS input ends on 25 September. The app labels itself as a historical replay. Do not use it for evacuation or other emergency decisions; follow official CWC, Bihar WRD, and local authority alerts.
 

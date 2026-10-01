@@ -18,14 +18,12 @@ CONFIG_FILE = ROOT / "configs" / "bihar.yaml"
 
 FEATURES = [
     "station_id",
-    "water_level_m",
+    "current_risk_label",
+    "level_minus_danger_m",
     "water_level_change_24h_m",
-    "rainfall_mm",
     "rainfall_24h_mm",
-    "rainfall_48h_mm",
-    "rainfall_72h_mm",
-    "danger_level_m",
-    "hfl_m",
+    "rainfall_24_48h_mm",
+    "rainfall_48_72h_mm",
 ]
 RISK_STYLE = {
     "Normal": ("🟢", "#17803d"),
@@ -83,14 +81,11 @@ def shap_explanations(pipeline, frame: pd.DataFrame, class_name: str) -> list[st
         contributions = values[0, :, class_index] if values.ndim == 3 else values[0]
     names = transform.get_feature_names_out()
     friendly = {
-        "numeric__water_level_m": "current river level",
+        "numeric__level_minus_danger_m": "current river level relative to danger threshold",
         "numeric__water_level_change_24h_m": "24-hour river-level change",
-        "numeric__rainfall_mm": "rainfall today",
         "numeric__rainfall_24h_mm": "24-hour rainfall",
-        "numeric__rainfall_48h_mm": "48-hour rainfall",
-        "numeric__rainfall_72h_mm": "72-hour rainfall",
-        "numeric__danger_level_m": "station danger threshold",
-        "numeric__hfl_m": "station historic high-flood threshold",
+        "numeric__rainfall_24_48h_mm": "rainfall from 24 to 48 hours earlier",
+        "numeric__rainfall_48_72h_mm": "rainfall from 48 to 72 hours earlier",
     }
     ranked = np.argsort(np.abs(contributions))[::-1]
     result = []
@@ -141,7 +136,15 @@ with st.sidebar:
     )
 
 row = choices.loc[choices["date"] == selected_date].iloc[0]
-features = pd.DataFrame([{column: row[column] for column in FEATURES}])
+features = pd.DataFrame([{
+    "station_id": row["station_id"],
+    "current_risk_label": row["risk_label"],
+    "level_minus_danger_m": row["water_level_m"] - row["danger_level_m"],
+    "water_level_change_24h_m": row["water_level_change_24h_m"],
+    "rainfall_24h_mm": row["rainfall_24h_mm"],
+    "rainfall_24_48h_mm": row["rainfall_48h_mm"] - row["rainfall_24h_mm"],
+    "rainfall_48_72h_mm": row["rainfall_72h_mm"] - row["rainfall_48h_mm"],
+}])
 probabilities = model.predict_proba(features)[0]
 classes = model.named_steps["classifier"].classes_
 ranked = sorted(zip(classes, probabilities), key=lambda item: item[1], reverse=True)
@@ -177,13 +180,25 @@ with st.expander("Compare with the recorded next-day category"):
     st.caption("Shown only because this is a historical replay. The recorded category is the training target.")
 
 st.markdown("### Pilot model evaluation")
+metric_cols = st.columns(3)
+metric_cols[0].metric("Later-date holdout accuracy", f"{report['accuracy']:.1%}")
+metric_cols[1].metric("Holdout macro F1", f"{report['macro_f1']:.3f}")
+metric_cols[2].metric("Holdout rows", str(report["test_rows"]))
+rf_cv = report["cv"]["candidate_comparison"]["tuned_random_forest"]
+pca_cv = report["cv"]["candidate_comparison"]["pca_random_forest"]
+persistence_cv = report["cv"]["persistence_baseline_accuracy"]
+persistence_test = report["persistence_baseline_holdout"]
 st.write(
-    f"Chronological holdout: {report['test_rows']} observations from "
-    f"{report['test_start']} to {report['test_end']}. Macro F1: {report['macro_f1']:.2f}."
+    f"The tuned forest averaged {rf_cv['cv_accuracy_mean']:.1%} accuracy across four "
+    f"chronological validation folds (fold SD {rf_cv['cv_accuracy_std']:.1%}). "
+    f"PCA averaged {pca_cv['cv_accuracy_mean']:.1%}; the current-category persistence "
+    f"baseline averaged {persistence_cv['mean']:.1%}. On the later holdout, persistence "
+    f"scored {persistence_test['accuracy']:.1%}."
 )
 st.caption(
-    "The holdout is small and comes from only two matched stations in one short period. "
-    "Scores are a prototype check, not evidence of operational forecast skill."
+    f"Holdout dates: {report['test_start']} to {report['test_end']}. "
+    "Only two stations and a short period are represented. The fold variation is large, "
+    "so these scores do not establish forecast skill outside this pilot."
 )
 
 station_table = pd.DataFrame(

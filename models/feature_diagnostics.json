@@ -1,0 +1,68 @@
+{
+  "rows": 228,
+  "numeric_features": [
+    "level_minus_danger_m",
+    "water_level_change_24h_m",
+    "rainfall_24h_mm",
+    "rainfall_24_48h_mm",
+    "rainfall_48_72h_mm"
+  ],
+  "removed_exact_duplicate": "rainfall_mm was omitted because rainfall_24h_mm is exactly the same for daily data.",
+  "relative_level_features": "water_level_m is expressed relative to danger_level_m. Raw danger/HFL thresholds and absolute water level are not separate model inputs.",
+  "rainfall_window_features": "Nested 24/48/72-hour totals are converted to non-overlapping 0-24, 24-48, and 48-72-hour blocks to reduce collinearity.",
+  "pearson_correlation": {
+    "level_minus_danger_m": {
+      "level_minus_danger_m": 1.0,
+      "water_level_change_24h_m": 0.021,
+      "rainfall_24h_mm": -0.021,
+      "rainfall_24_48h_mm": 0.005,
+      "rainfall_48_72h_mm": 0.035
+    },
+    "water_level_change_24h_m": {
+      "level_minus_danger_m": 0.021,
+      "water_level_change_24h_m": 1.0,
+      "rainfall_24h_mm": 0.048,
+      "rainfall_24_48h_mm": 0.185,
+      "rainfall_48_72h_mm": 0.267
+    },
+    "rainfall_24h_mm": {
+      "level_minus_danger_m": -0.021,
+      "water_level_change_24h_m": 0.048,
+      "rainfall_24h_mm": 1.0,
+      "rainfall_24_48h_mm": 0.169,
+      "rainfall_48_72h_mm": 0.005
+    },
+    "rainfall_24_48h_mm": {
+      "level_minus_danger_m": 0.005,
+      "water_level_change_24h_m": 0.185,
+      "rainfall_24h_mm": 0.169,
+      "rainfall_24_48h_mm": 1.0,
+      "rainfall_48_72h_mm": 0.163
+    },
+    "rainfall_48_72h_mm": {
+      "level_minus_danger_m": 0.035,
+      "water_level_change_24h_m": 0.267,
+      "rainfall_24h_mm": 0.005,
+      "rainfall_24_48h_mm": 0.163,
+      "rainfall_48_72h_mm": 1.0
+    }
+  },
+  "numeric_vif": {
+    "level_minus_danger_m": 1.002,
+    "water_level_change_24h_m": 1.102,
+    "rainfall_24h_mm": 1.031,
+    "rainfall_24_48h_mm": 1.08,
+    "rainfall_48_72h_mm": 1.094
+  },
+  "vif_note": "VIF is mainly a linear-model diagnostic. Random Forests do not require independent inputs; the rainfall blocks here are non-overlapping and remaining correlations are small.",
+  "leakage_audit": {
+    "target": "risk_label_24h",
+    "target_derived_from": "next consecutive day's river level compared with configured warning/danger/HFL thresholds",
+    "future_fields_excluded_from_inputs": [
+      "target_date",
+      "target_water_level_m",
+      "risk_label_24h"
+    ],
+    "current_risk_label": "Included as current_risk_label, calculated only from the selected date's observed river level and configured thresholds; it is known at prediction time."
+  }
+}

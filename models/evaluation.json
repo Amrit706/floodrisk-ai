@@ -1,13 +1,155 @@
 {
   "model": "RandomForestClassifier",
+  "selected_candidate": "tuned_random_forest",
+  "pca_used": false,
+  "best_params": {
+    "classifier__max_depth": null,
+    "classifier__max_features": 0.8,
+    "classifier__min_samples_leaf": 2,
+    "classifier__n_estimators": 100
+  },
   "prediction_horizon_hours": 24,
-  "split_type": "chronological",
+  "split_type": "chronological 80/20 by unique date; all station rows on one date stay together",
   "train_rows": 182,
   "test_rows": 46,
   "train_start": "2026-06-03",
   "train_end": "2026-09-01",
   "test_start": "2026-09-02",
   "test_end": "2026-09-24",
+  "cv": {
+    "method": "expanding-window TimeSeriesSplit, 4 folds, 14 validation dates per fold",
+    "dates_available_for_cv": 91,
+    "baseline": {
+      "accuracy": {
+        "mean": 0.8660714285714286,
+        "std": 0.16046607817510206,
+        "fold_scores": [
+          0.6071428571428571,
+          0.8571428571428571,
+          1.0,
+          1.0
+        ]
+      },
+      "balanced_accuracy": {
+        "mean": 0.8690476190476191,
+        "std": 0.14035507288751903,
+        "fold_scores": [
+          0.6666666666666666,
+          0.8095238095238094,
+          1.0,
+          1.0
+        ]
+      },
+      "macro_f1": {
+        "mean": 0.6474673202614378,
+        "std": 0.1268229404121714,
+        "fold_scores": [
+          0.45098039215686275,
+          0.8055555555555555,
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    "persistence_baseline_accuracy": {
+      "fold_scores": [
+        0.8928571428571429,
+        0.9285714285714286,
+        1.0,
+        1.0
+      ],
+      "mean": 0.9553571428571429,
+      "std": 0.04639421805988062
+    },
+    "candidate_comparison": {
+      "tuned_random_forest": {
+        "cv_accuracy_mean": 0.875,
+        "cv_accuracy_std": 0.16071428571428573,
+        "cv_macro_f1_mean": 0.658645276292335,
+        "best_params": {
+          "classifier__max_depth": null,
+          "classifier__max_features": 0.8,
+          "classifier__min_samples_leaf": 2,
+          "classifier__n_estimators": 100
+        }
+      },
+      "pca_random_forest": {
+        "cv_accuracy_mean": 0.8839285714285714,
+        "cv_accuracy_std": 0.16244111963089514,
+        "cv_macro_f1_mean": 0.6717728758169934,
+        "best_params": {
+          "classifier__max_depth": null,
+          "classifier__max_features": "sqrt",
+          "classifier__min_samples_leaf": 4,
+          "classifier__n_estimators": 100
+        }
+      }
+    },
+    "selection_rule": "One-standard-error rule for CV accuracy; prefer no PCA when its score is statistically close to PCA."
+  },
+  "accuracy": 0.9565217391304348,
+  "macro_f1": 0.9361111111111112,
+  "balanced_accuracy": 0.9361111111111112,
+  "persistence_baseline_holdout": {
+    "accuracy": 0.9347826086956522,
+    "macro_f1": 0.9010752688172042,
+    "description": "Predict the next-day category equals the observed current-day risk_label."
+  },
+  "labels": [
+    "Normal",
+    "Above Normal",
+    "Severe"
+  ],
+  "confusion_matrix": [
+    [
+      23,
+      0,
+      0
+    ],
+    [
+      0,
+      7,
+      1
+    ],
+    [
+      0,
+      1,
+      14
+    ]
+  ],
+  "classification_report": {
+    "Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 23.0
+    },
+    "Above Normal": {
+      "precision": 0.875,
+      "recall": 0.875,
+      "f1-score": 0.875,
+      "support": 8.0
+    },
+    "Severe": {
+      "precision": 0.9333333333333333,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9333333333333333,
+      "support": 15.0
+    },
+    "accuracy": 0.9565217391304348,
+    "macro avg": {
+      "precision": 0.9361111111111112,
+      "recall": 0.9361111111111112,
+      "f1-score": 0.9361111111111112,
+      "support": 46.0
+    },
+    "weighted avg": {
+      "precision": 0.9565217391304348,
+      "recall": 0.9565217391304348,
+      "f1-score": 0.9565217391304348,
+      "support": 46.0
+    }
+  },
   "target_classes_in_data": [
     "Above Normal",
     "Normal",
@@ -16,72 +158,15 @@
   "classes_absent_from_data": [
     "Extreme"
   ],
-  "macro_f1": 0.9010752688172042,
-  "labels": [
-    "Above Normal",
-    "Normal",
-    "Severe"
-  ],
-  "confusion_matrix": [
-    [
-      6,
-      0,
-      2
-    ],
-    [
-      0,
-      23,
-      0
-    ],
-    [
-      1,
-      0,
-      14
-    ]
-  ],
-  "classification_report": {
-    "Above Normal": {
-      "precision": 0.8571428571428571,
-      "recall": 0.75,
-      "f1-score": 0.8,
-      "support": 8.0
-    },
-    "Normal": {
-      "precision": 1.0,
-      "recall": 1.0,
-      "f1-score": 1.0,
-      "support": 23.0
-    },
-    "Severe": {
-      "precision": 0.875,
-      "recall": 0.9333333333333333,
-      "f1-score": 0.9032258064516129,
-      "support": 15.0
-    },
-    "accuracy": 0.9347826086956522,
-    "macro avg": {
-      "precision": 0.9107142857142857,
-      "recall": 0.8944444444444445,
-      "f1-score": 0.9010752688172042,
-      "support": 46.0
-    },
-    "weighted avg": {
-      "precision": 0.9343944099378882,
-      "recall": 0.9347826086956522,
-      "f1-score": 0.9336605890603085,
-      "support": 46.0
-    }
-  },
   "feature_columns": [
     "station_id",
-    "water_level_m",
+    "current_risk_label",
+    "level_minus_danger_m",
     "water_level_change_24h_m",
-    "rainfall_mm",
     "rainfall_24h_mm",
-    "rainfall_48h_mm",
-    "rainfall_72h_mm",
-    "danger_level_m",
-    "hfl_m"
+    "rainfall_24_48h_mm",
+    "rainfall_48_72h_mm"
   ],
-  "caveat": "Small, short-period pilot data from two matched stations; not an operational warning model."
+  "caveat": "Only 228 examples from two stations in one short period. Scores are not operational flood-warning validation.",
+  "class_score_note": "Random Forest predict_proba outputs are not calibrated probabilities of flooding."
 }
