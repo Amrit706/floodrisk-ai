@@ -10,7 +10,7 @@
 [![Hackathon](https://img.shields.io/badge/Hackathon-HackNowa%202026-6c5ce7)](https://unstop.com/hackathons/hacknowa-global-hackathon-2026-innovation-hacks-1752198/amp)
 [![Status](https://img.shields.io/badge/Status-Research%20prototype-orange)](#-limitations-and-responsible-use)
 
-🚀 **Streamlit app:** [Open FloodRiskAI](https://floodrisk-ai.streamlit.app/) *(verify that the latest deployment rebuild is working before sharing).*
+🚀 **Streamlit app:** [Open FloodRiskAI](https://floodrisk-ai.streamlit.app/) 
 
 ---
 
